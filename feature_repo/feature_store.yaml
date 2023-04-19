@@ -1,20 +1,20 @@
 project: feastdemo
 registry:
     registry_type: sql
-    path: teradatasql://DBC:dbc@10.27.81.33/?database=teddy_bank&LOGMECH=TDNEGO
+    path: teradatasql://<user>:<password>@<hostIP>/?database=teddybank&LOGMECH=TDNEGO
 provider: local
 online_store:
     type: feast_teradata.online.teradata.TeradataOnlineStore
-    host: 10.27.81.33
-    database: teddy_bank
-    user: DBC
-    password: dbc
+    host: <host>
+    database: teddybank
+    user: <user>
+    password: <password>
     log_mech: TDNEGO
 offline_store:
     type: feast_teradata.offline.teradata.TeradataOfflineStore
-    host: 10.27.81.33
-    database: teddy_bank
-    user: DBC
-    password: dbc
+    host: <host>
+    database: teddybank
+    user: <user>
+    password: <password>
     log_mech: TDNEGO
 entity_key_serialization_version: 2
