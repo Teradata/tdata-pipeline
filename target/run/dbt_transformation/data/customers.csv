@@ -1,0 +1,14 @@
+
+    
+    
+    CREATE  TABLE "teddybank"."customers"
+    
+    ("cust_id" INTEGER,"income" INTEGER,"age" INTEGER,"years_with_bank" INTEGER,"nbr_children" INTEGER,"gender" LONG VARCHAR,"marital_status" INTEGER,"name_prefix" LONG VARCHAR,"first_name" LONG VARCHAR,"last_name" LONG VARCHAR,"street_nbr" INTEGER,"street_name" LONG VARCHAR,"postal_code" INTEGER,"city_name" LONG VARCHAR,"state_code" LONG VARCHAR)
+    ;
+
+  ;
+    -- dbt seed --
+    insert into "teddybank"."customers" ("cust_id", "income", "age", "years_with_bank", "nbr_children", "gender", "marital_status", "name_prefix", "first_name", "last_name", "street_nbr", "street_name", "postal_code", "city_name", "state_code") values
+                (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        
+  

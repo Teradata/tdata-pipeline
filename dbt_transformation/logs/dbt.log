@@ -1,0 +1,1346 @@
+
+
+============================== 2023-04-18 23:16:51.252374 | bd1d4671-dca9-4046-a282-833ed877b728 ==============================
+23:16:51.252374 [info ] [MainThread]: Running with dbt=1.1.0
+23:16:51.253383 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['Analytic_Dataset'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+23:16:51.253383 [debug] [MainThread]: Tracking: tracking
+23:16:51.266375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FC5331510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FC5332920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FC53337F0>]}
+23:16:51.284371 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+23:16:51.284371 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+23:16:51.285269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bd1d4671-dca9-4046-a282-833ed877b728', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FC53312A0>]}
+23:16:51.415278 [debug] [MainThread]: Parsing macros\Bincoding_Fit.sql
+23:16:51.421278 [debug] [MainThread]: Parsing macros\Bincoding_Transform.sql
+23:16:51.424266 [debug] [MainThread]: Parsing macros\getColumns.sql
+23:16:51.425279 [debug] [MainThread]: Parsing macros\getHyperparameters.sql
+23:16:51.426278 [debug] [MainThread]: Parsing macros\getInputSet.sql
+23:16:51.426278 [debug] [MainThread]: Parsing macros\getValues.sql
+23:16:51.428280 [debug] [MainThread]: Parsing macros\isTableKind_T_Q.sql
+23:16:51.429281 [debug] [MainThread]: Parsing macros\OneHotEncoding.sql
+23:16:51.442370 [debug] [MainThread]: Parsing macros\adapters.sql
+23:16:51.453366 [debug] [MainThread]: Parsing macros\catalog.sql
+23:16:51.457370 [debug] [MainThread]: Parsing macros\materializations\incremental\helpers.sql
+23:16:51.458371 [debug] [MainThread]: Parsing macros\materializations\incremental\incremental.sql
+23:16:51.462363 [debug] [MainThread]: Parsing macros\materializations\seed\seed.sql
+23:16:51.472364 [debug] [MainThread]: Parsing macros\materializations\snapshot\snapshot.sql
+23:16:51.490365 [debug] [MainThread]: Parsing macros\materializations\snapshot\snapshot_merge.sql
+23:16:51.491366 [debug] [MainThread]: Parsing macros\materializations\snapshot\strategies.sql
+23:16:51.492367 [debug] [MainThread]: Parsing macros\materializations\test\test.sql
+23:16:51.493328 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+23:16:51.498363 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+23:16:51.500366 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+23:16:51.502364 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+23:16:51.506364 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+23:16:51.509370 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+23:16:51.514365 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+23:16:51.515365 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+23:16:51.521365 [debug] [MainThread]: Parsing macros\etc\statement.sql
+23:16:51.523381 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+23:16:51.524381 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+23:16:51.525366 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+23:16:51.525366 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+23:16:51.526362 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+23:16:51.526362 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+23:16:51.527406 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+23:16:51.529366 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+23:16:51.545385 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+23:16:51.548369 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+23:16:51.551363 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+23:16:51.557384 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+23:16:51.558364 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+23:16:51.567372 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+23:16:51.576362 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+23:16:51.577375 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+23:16:51.582364 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+23:16:51.583370 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+23:16:51.585362 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+23:16:51.586371 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+23:16:51.590386 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+23:16:51.599367 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+23:16:51.603364 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+23:16:51.610380 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+23:16:51.616364 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+23:16:51.617363 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+23:16:51.627377 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+23:16:51.628365 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+23:16:51.631365 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+23:16:51.632363 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+23:16:51.772279 [debug] [MainThread]: 1603: static parser failed on VAL\Dimensions\Analytic_Dataset.sql
+23:16:51.778284 [info ] [MainThread]: 
+            SELECT distinct acct_type from teddybank.accounts_;
+    
+23:16:51.810267 [debug] [MainThread]: 1602: parser fallback to jinja rendering on VAL\Dimensions\Analytic_Dataset.sql
+23:16:51.841264 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+23:16:51.845264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bd1d4671-dca9-4046-a282-833ed877b728', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FC5477A30>]}
+23:16:51.849264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bd1d4671-dca9-4046-a282-833ed877b728', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FC3BFD300>]}
+23:16:51.850264 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 190 macros, 0 operations, 3 seed files, 8 sources, 0 exposures, 0 metrics
+23:16:51.850264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bd1d4671-dca9-4046-a282-833ed877b728', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FC5474B80>]}
+23:16:51.851264 [info ] [MainThread]: 
+23:16:51.851264 [debug] [MainThread]: Acquiring new teradata connection "master"
+23:16:51.853264 [debug] [ThreadPool]: Acquiring new teradata connection "list_schemas"
+23:16:51.858374 [debug] [ThreadPool]: Using teradata connection "list_schemas"
+23:16:51.858374 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_schemas"} */
+SELECT DatabaseName AS schema_name
+        FROM DBC.DatabasesV
+23:16:51.858374 [debug] [ThreadPool]: Opening a new connection, currently in state init
+23:16:55.363935 [debug] [ThreadPool]: SQL status: OK in 3.51 seconds
+23:16:55.370105 [debug] [ThreadPool]: On list_schemas: Close
+23:16:55.470737 [debug] [ThreadPool]: Acquiring new teradata connection "list_None_teddybank"
+23:16:55.482791 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+23:16:55.483969 [debug] [ThreadPool]: On list_None_teddybank: 
+23:16:55.483969 [debug] [ThreadPool]: Opening a new connection, currently in state init
+23:16:57.052382 [debug] [ThreadPool]: SQL status: OK in 1.57 seconds
+23:16:57.053002 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+23:16:57.053568 [debug] [ThreadPool]: On list_None_teddybank: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_None_teddybank"} */
+SELECT
+      NULL AS "database",
+      TableName AS name,
+      DatabaseName AS "schema",
+      CASE WHEN TableKind = 'T' THEN 'table'
+        WHEN TableKind = 'O' THEN 'table'
+        WHEN TableKind = 'V' THEN 'view'
+        ELSE TableKind
+      END AS table_type
+    FROM DBC.TablesV
+    WHERE DatabaseName = 'teddybank' (NOT CASESPECIFIC)
+      AND TableKind IN ('T', 'V', 'O')
+
+  
+23:16:57.244475 [debug] [ThreadPool]: SQL status: OK in 0.19 seconds
+23:16:57.247982 [debug] [ThreadPool]: On list_None_teddybank: ROLLBACK
+23:16:57.337274 [debug] [ThreadPool]: On list_None_teddybank: Close
+23:16:57.435215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bd1d4671-dca9-4046-a282-833ed877b728', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FC3C76920>]}
+23:16:57.435914 [debug] [MainThread]: Using teradata connection "master"
+23:16:57.436549 [debug] [MainThread]: On master: 
+23:16:57.437076 [debug] [MainThread]: Opening a new connection, currently in state init
+23:16:59.000081 [debug] [MainThread]: SQL status: OK in 1.56 seconds
+23:16:59.001392 [debug] [MainThread]: On master: COMMIT
+23:16:59.001966 [debug] [MainThread]: Using teradata connection "master"
+23:16:59.002525 [debug] [MainThread]: On master: COMMIT
+23:16:59.089834 [debug] [MainThread]: SQL status: OK in 0.09 seconds
+23:16:59.090673 [debug] [MainThread]: On master: Close
+23:16:59.187439 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+23:16:59.188869 [info ] [MainThread]: 
+23:16:59.202509 [debug] [Thread-1 (]: Began running node model.dbt_transformation.Analytic_Dataset
+23:16:59.203461 [info ] [Thread-1 (]: 1 of 1 START table model teddybank.Analytic_Dataset ............................ [RUN]
+23:16:59.205458 [debug] [Thread-1 (]: Acquiring new teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:16:59.205458 [debug] [Thread-1 (]: Began compiling node model.dbt_transformation.Analytic_Dataset
+23:16:59.206461 [debug] [Thread-1 (]: Compiling model.dbt_transformation.Analytic_Dataset
+23:16:59.220456 [info ] [Thread-1 (]: 
+            SELECT distinct acct_type from teddybank.accounts_;
+    
+23:16:59.221416 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:16:59.221416 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT distinct acct_type from teddybank.accounts_;
+    
+  
+23:16:59.221416 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+23:17:00.912439 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1202] [Teradata Database] [Error 3807] Object 'teddybank.accounts_' does not exist.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:670
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:666
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+23:17:00.917593 [debug] [Thread-1 (]: finished collecting timing info
+23:17:00.918214 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: Close
+23:17:01.019468 [debug] [Thread-1 (]: Database Error in model Analytic_Dataset (models\VAL\Dimensions\Analytic_Dataset.sql)
+  [Version 17.20.0.12] [Session 1202] [Teradata Database] [Error 3807] Object 'teddybank.accounts_' does not exist.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+   at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+   at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+   at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+   at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:670
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:666
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+23:17:01.020670 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bd1d4671-dca9-4046-a282-833ed877b728', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FEB20B4C0>]}
+23:17:01.021526 [error] [Thread-1 (]: 1 of 1 ERROR creating table model teddybank.Analytic_Dataset ................... [[31mERROR[0m in 1.82s]
+23:17:01.023150 [debug] [Thread-1 (]: Finished running node model.dbt_transformation.Analytic_Dataset
+23:17:01.025757 [debug] [MainThread]: Acquiring new teradata connection "master"
+23:17:01.026322 [debug] [MainThread]: Using teradata connection "master"
+23:17:01.026953 [debug] [MainThread]: On master: 
+23:17:01.027558 [debug] [MainThread]: Opening a new connection, currently in state closed
+23:17:02.599392 [debug] [MainThread]: SQL status: OK in 1.57 seconds
+23:17:02.600135 [debug] [MainThread]: On master: COMMIT
+23:17:02.600699 [debug] [MainThread]: Using teradata connection "master"
+23:17:02.601245 [debug] [MainThread]: On master: COMMIT
+23:17:02.684862 [debug] [MainThread]: SQL status: OK in 0.08 seconds
+23:17:02.685156 [debug] [MainThread]: On master: Close
+23:17:02.778748 [info ] [MainThread]: 
+23:17:02.779793 [info ] [MainThread]: Finished running 1 table model in 10.93s.
+23:17:02.780997 [debug] [MainThread]: Connection 'master' was properly closed.
+23:17:02.781510 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+23:17:02.781585 [debug] [MainThread]: Connection 'list_None_teddybank' was properly closed.
+23:17:02.782216 [debug] [MainThread]: Connection 'model.dbt_transformation.Analytic_Dataset' was properly closed.
+23:17:02.794445 [info ] [MainThread]: 
+23:17:02.795928 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+23:17:02.797060 [info ] [MainThread]: 
+23:17:02.797945 [error] [MainThread]: [33mDatabase Error in model Analytic_Dataset (models\VAL\Dimensions\Analytic_Dataset.sql)[0m
+23:17:02.797945 [error] [MainThread]:   [Version 17.20.0.12] [Session 1202] [Teradata Database] [Error 3807] Object 'teddybank.accounts_' does not exist.
+23:17:02.798941 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+23:17:02.799941 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+23:17:02.799941 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+23:17:02.800939 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+23:17:02.801938 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+23:17:02.801938 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+23:17:02.801938 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:670
+23:17:02.802938 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+23:17:02.802938 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+23:17:02.803938 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+23:17:02.803938 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+23:17:02.804939 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+23:17:02.804939 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+23:17:02.805939 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+23:17:02.805939 [error] [MainThread]:    at main.goCreateRows goside.go:666
+23:17:02.805939 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+23:17:02.806938 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+23:17:02.806938 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+23:17:02.807938 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+23:17:02.807938 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+23:17:02.807938 [info ] [MainThread]: 
+23:17:02.808938 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+23:17:02.808938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FC5474550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FC5477190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024FEB20BFA0>]}
+
+
+============================== 2023-04-18 23:21:20.608564 | 850b5dd2-c94d-418e-90ef-cdfd5c8f1a80 ==============================
+23:21:20.608564 [info ] [MainThread]: Running with dbt=1.1.0
+23:21:20.608564 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['Analytic_Dataset'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+23:21:20.608564 [debug] [MainThread]: Tracking: tracking
+23:21:20.620489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263477C59F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263477C77C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263477C6470>]}
+23:21:20.719489 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+23:21:20.720487 [debug] [MainThread]: Partial parsing: deleted source source.dbt_transformation.teddybank.customers_
+23:21:20.720487 [debug] [MainThread]: Partial parsing: deleted source source.dbt_transformation.teddybank.accouonts_
+23:21:20.720487 [debug] [MainThread]: Partial parsing: deleted source source.dbt_transformation.teddybank.transactions_
+23:21:20.720487 [debug] [MainThread]: Partial parsing: deleted source source.dbt_transformation.teddybank.ohe_dimensionTable
+23:21:20.720487 [debug] [MainThread]: Partial parsing: deleted source source.dbt_transformation.teddybank.OHE_Hyperparameters
+23:21:20.720487 [debug] [MainThread]: Partial parsing: deleted source source.dbt_transformation.teddybank.OHE_Transform_Hyperparameters
+23:21:20.720487 [debug] [MainThread]: Partial parsing: deleted source source.dbt_transformation.teddybank.bc_dimensionTable
+23:21:20.720487 [debug] [MainThread]: Partial parsing: deleted source source.dbt_transformation.teddybank.BC_Hyperparameters
+23:21:20.721473 [debug] [MainThread]: Partial parsing: update schema file: dbt_transformation://models\VAL\schema.yml
+23:21:20.721473 [debug] [MainThread]: Partial parsing: updated file: dbt_transformation://models\VAL\Dimensions\Analytic_Dataset.sql
+23:21:20.727589 [debug] [MainThread]: 1603: static parser failed on VAL\Dimensions\Analytic_Dataset.sql
+23:21:20.734560 [info ] [MainThread]: 
+            SELECT distinct acct_type from teddybank.raw_accounts;
+    
+23:21:20.765559 [debug] [MainThread]: 1602: parser fallback to jinja rendering on VAL\Dimensions\Analytic_Dataset.sql
+23:21:20.797518 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+23:21:20.800507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '850b5dd2-c94d-418e-90ef-cdfd5c8f1a80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263478F74C0>]}
+23:21:20.804523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '850b5dd2-c94d-418e-90ef-cdfd5c8f1a80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263478C7FD0>]}
+23:21:20.805472 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 190 macros, 0 operations, 3 seed files, 8 sources, 0 exposures, 0 metrics
+23:21:20.805472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '850b5dd2-c94d-418e-90ef-cdfd5c8f1a80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263478C7F10>]}
+23:21:20.806505 [info ] [MainThread]: 
+23:21:20.806505 [debug] [MainThread]: Acquiring new teradata connection "master"
+23:21:20.808559 [debug] [ThreadPool]: Acquiring new teradata connection "list_schemas"
+23:21:20.813564 [debug] [ThreadPool]: Using teradata connection "list_schemas"
+23:21:20.813564 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_schemas"} */
+SELECT DatabaseName AS schema_name
+        FROM DBC.DatabasesV
+23:21:20.813564 [debug] [ThreadPool]: Opening a new connection, currently in state init
+23:21:24.447192 [debug] [ThreadPool]: SQL status: OK in 3.63 seconds
+23:21:24.452140 [debug] [ThreadPool]: On list_schemas: Close
+23:21:24.549142 [debug] [ThreadPool]: Acquiring new teradata connection "list_None_teddybank"
+23:21:24.558745 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+23:21:24.558745 [debug] [ThreadPool]: On list_None_teddybank: 
+23:21:24.558745 [debug] [ThreadPool]: Opening a new connection, currently in state init
+23:21:26.120369 [debug] [ThreadPool]: SQL status: OK in 1.56 seconds
+23:21:26.120807 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+23:21:26.121913 [debug] [ThreadPool]: On list_None_teddybank: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_None_teddybank"} */
+SELECT
+      NULL AS "database",
+      TableName AS name,
+      DatabaseName AS "schema",
+      CASE WHEN TableKind = 'T' THEN 'table'
+        WHEN TableKind = 'O' THEN 'table'
+        WHEN TableKind = 'V' THEN 'view'
+        ELSE TableKind
+      END AS table_type
+    FROM DBC.TablesV
+    WHERE DatabaseName = 'teddybank' (NOT CASESPECIFIC)
+      AND TableKind IN ('T', 'V', 'O')
+
+  
+23:21:26.339579 [debug] [ThreadPool]: SQL status: OK in 0.22 seconds
+23:21:26.343474 [debug] [ThreadPool]: On list_None_teddybank: ROLLBACK
+23:21:26.434866 [debug] [ThreadPool]: On list_None_teddybank: Close
+23:21:26.544194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '850b5dd2-c94d-418e-90ef-cdfd5c8f1a80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263478E3EB0>]}
+23:21:26.544869 [debug] [MainThread]: Using teradata connection "master"
+23:21:26.545601 [debug] [MainThread]: On master: 
+23:21:26.546223 [debug] [MainThread]: Opening a new connection, currently in state init
+23:21:28.118194 [debug] [MainThread]: SQL status: OK in 1.57 seconds
+23:21:28.118459 [debug] [MainThread]: On master: COMMIT
+23:21:28.119197 [debug] [MainThread]: Using teradata connection "master"
+23:21:28.119478 [debug] [MainThread]: On master: COMMIT
+23:21:28.213752 [debug] [MainThread]: SQL status: OK in 0.09 seconds
+23:21:28.214347 [debug] [MainThread]: On master: Close
+23:21:28.316037 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+23:21:28.316361 [info ] [MainThread]: 
+23:21:28.322560 [debug] [Thread-1 (]: Began running node model.dbt_transformation.Analytic_Dataset
+23:21:28.323094 [info ] [Thread-1 (]: 1 of 1 START table model teddybank.Analytic_Dataset ............................ [RUN]
+23:21:28.323612 [debug] [Thread-1 (]: Acquiring new teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:28.324138 [debug] [Thread-1 (]: Began compiling node model.dbt_transformation.Analytic_Dataset
+23:21:28.324138 [debug] [Thread-1 (]: Compiling model.dbt_transformation.Analytic_Dataset
+23:21:28.330747 [info ] [Thread-1 (]: 
+            SELECT distinct acct_type from teddybank.raw_accounts;
+    
+23:21:28.330747 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:28.331745 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT distinct acct_type from teddybank.raw_accounts;
+    
+  
+23:21:28.331745 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+23:21:30.102925 [debug] [Thread-1 (]: SQL status: OK in 1.77 seconds
+23:21:30.106305 [info ] [Thread-1 (]: ('CC', 'SV', 'CK')
+23:21:30.108725 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:30.109304 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT json_hyperparameters from teddybank.Hyperparameters where id = 2;;
+    
+  
+23:21:30.345559 [debug] [Thread-1 (]: SQL status: OK in 0.24 seconds
+23:21:30.350016 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:30.350648 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT count(*) from dbc.TablesV where TableName='ohe_dimensionTable' and DataBaseName='teddybank';
+    
+  
+23:21:30.586916 [debug] [Thread-1 (]: SQL status: OK in 0.24 seconds
+23:21:30.593541 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:30.594091 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT json_hyperparameters from teddybank.Hyperparameters where id = 3;;
+    
+  
+23:21:30.780326 [debug] [Thread-1 (]: SQL status: OK in 0.19 seconds
+23:21:30.783418 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_transformation.Analytic_Dataset"
+23:21:30.785529 [debug] [Thread-1 (]: finished collecting timing info
+23:21:30.786279 [debug] [Thread-1 (]: Began executing node model.dbt_transformation.Analytic_Dataset
+23:21:30.822425 [debug] [Thread-1 (]: Writing runtime SQL for node "model.dbt_transformation.Analytic_Dataset"
+23:21:30.824393 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:30.824393 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: 
+23:21:30.825158 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+23:21:30.825158 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:30.825717 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+  CREATE  TABLE
+  "teddybank"."Analytic_Dataset__dbt_tmp"
+  
+    AS (
+      SELECT * FROM (
+        
+
+
+
+
+
+
+with ADS as (
+
+SELECT * from TD_OneHotEncodingTransform(
+
+   
+ON (
+            select 
+       T1.cust_id,Min(T1.income) as income,Min(T1.age) as age,Min(T1.years_with_bank) as years_with_bank,Min(T1.nbr_children) as nbr_children, Min(T1.marital_status) as marital_status,Min(T1.gender) as gender,Min(T1.state_code) as state_code,Min(T2.acct_type) as acct_type
+       
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CC_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CC_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS SV_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS SV_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CK_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CK_avg_tran_amt
+       
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 1 THEN T3.tran_id ELSE NULL END) AS q1_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 2 THEN T3.tran_id ELSE NULL END) AS q2_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 3 THEN T3.tran_id ELSE NULL END) AS q3_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 4 THEN T3.tran_id ELSE NULL END) AS q4_trans_cnt
+       
+       ,current_timestamp(0) as event_timestamp
+        FROM teddybank.raw_customers AS T1
+        LEFT OUTER JOIN teddybank.raw_accounts AS T2
+            ON T1.cust_id = T2.cust_id
+        LEFT OUTER JOIN teddybank.raw_transactions AS T3
+            ON T2.acct_nbr = T3.acct_nbr
+        GROUP BY T1.cust_id
+) AS InputTable
+ON (
+        
+        SELECT * from TD_OneHotEncodingFit(
+            
+            ON (
+            select 
+       T1.cust_id,Min(T1.income) as income,Min(T1.age) as age,Min(T1.years_with_bank) as years_with_bank,Min(T1.nbr_children) as nbr_children, Min(T1.marital_status) as marital_status,Min(T1.gender) as gender,Min(T1.state_code) as state_code,Min(T2.acct_type) as acct_type
+       
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CC_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CC_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS SV_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS SV_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CK_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CK_avg_tran_amt
+       
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 1 THEN T3.tran_id ELSE NULL END) AS q1_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 2 THEN T3.tran_id ELSE NULL END) AS q2_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 3 THEN T3.tran_id ELSE NULL END) AS q3_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 4 THEN T3.tran_id ELSE NULL END) AS q4_trans_cnt
+       
+       ,current_timestamp(0) as event_timestamp
+        FROM teddybank.raw_customers AS T1
+        LEFT OUTER JOIN teddybank.raw_accounts AS T2
+            ON T1.cust_id = T2.cust_id
+        LEFT OUTER JOIN teddybank.raw_transactions AS T3
+            ON T2.acct_nbr = T3.acct_nbr
+        GROUP BY T1.cust_id
+) AS InputTable
+            ON teddybank.ohe_dimensionTable AS CategoryTable Dimension
+            
+            USING
+            IsInputDense('true')TargetColumn('gender','state_code','acct_type')
+            Approach('List')
+        
+            TargetColumnNames ('column_name')
+            CategoriesColumn ('category')CategoryCounts(2,6,3)
+        ) as dt
+ ) AS FitTable DIMENSION 
+USING
+IsInputDense('true')
+) as dt
+
+
+)
+
+select * from ADS
+      ) D
+    ) WITH DATA
+  
+  ;
+
+
+23:21:45.958427 [debug] [Thread-1 (]: SQL status: OK in 15.13 seconds
+23:21:45.971970 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:45.971970 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    DROP table /*+ IF EXISTS */ "teddybank"."Analytic_Dataset";
+  
+23:21:46.056000 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1207] [Teradata Database] [Error 3807] Object 'teddybank.Analytic_Dataset' does not exist.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:670
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:666
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+23:21:46.056592 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: ROLLBACK
+23:21:46.146978 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:46.147487 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: 
+23:21:46.148073 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+23:21:46.148073 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:46.148620 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    RENAME table "teddybank"."Analytic_Dataset__dbt_tmp" TO "teddybank"."Analytic_Dataset"
+  
+23:21:46.380223 [debug] [Thread-1 (]: SQL status: OK in 0.23 seconds
+23:21:46.398876 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: COMMIT
+23:21:46.399879 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:46.399879 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: COMMIT
+23:21:46.481212 [debug] [Thread-1 (]: SQL status: OK in 0.08 seconds
+23:21:46.492363 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:21:46.493467 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+DROP table /*+ IF EXISTS */ "teddybank"."Analytic_Dataset__dbt_backup";
+23:21:46.575693 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1207] [Teradata Database] [Error 3807] Object 'teddybank.Analytic_Dataset__dbt_backup' does not exist.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:670
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:666
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+23:21:46.578241 [debug] [Thread-1 (]: finished collecting timing info
+23:21:46.578798 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: Close
+23:21:46.679910 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '850b5dd2-c94d-418e-90ef-cdfd5c8f1a80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263476F7400>]}
+23:21:46.680969 [info ] [Thread-1 (]: 1 of 1 OK created table model teddybank.Analytic_Dataset ....................... [[32mOK[0m in 18.36s]
+23:21:46.682711 [debug] [Thread-1 (]: Finished running node model.dbt_transformation.Analytic_Dataset
+23:21:46.685345 [debug] [MainThread]: Acquiring new teradata connection "master"
+23:21:46.685934 [debug] [MainThread]: Using teradata connection "master"
+23:21:46.686524 [debug] [MainThread]: On master: 
+23:21:46.687144 [debug] [MainThread]: Opening a new connection, currently in state closed
+23:21:48.217235 [debug] [MainThread]: SQL status: OK in 1.53 seconds
+23:21:48.217439 [debug] [MainThread]: On master: COMMIT
+23:21:48.217439 [debug] [MainThread]: Using teradata connection "master"
+23:21:48.217439 [debug] [MainThread]: On master: COMMIT
+23:21:48.303654 [debug] [MainThread]: SQL status: OK in 0.09 seconds
+23:21:48.305330 [debug] [MainThread]: On master: Close
+23:21:48.401197 [info ] [MainThread]: 
+23:21:48.402541 [info ] [MainThread]: Finished running 1 table model in 27.59s.
+23:21:48.403739 [debug] [MainThread]: Connection 'master' was properly closed.
+23:21:48.404255 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+23:21:48.404415 [debug] [MainThread]: Connection 'list_None_teddybank' was properly closed.
+23:21:48.405012 [debug] [MainThread]: Connection 'model.dbt_transformation.Analytic_Dataset' was properly closed.
+23:21:48.414081 [info ] [MainThread]: 
+23:21:48.415081 [info ] [MainThread]: [32mCompleted successfully[0m
+23:21:48.415081 [info ] [MainThread]: 
+23:21:48.416081 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+23:21:48.416081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263478C6A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263478F7460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263477DE380>]}
+
+
+============================== 2023-04-18 23:53:32.741175 | 2c14c92c-23a5-4e06-ac30-1c2ba0a8a16b ==============================
+23:53:32.741175 [info ] [MainThread]: Running with dbt=1.1.0
+23:53:32.742184 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['Analytic_Dataset'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+23:53:32.742184 [debug] [MainThread]: Tracking: tracking
+23:53:32.754112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F4A1510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F4A2950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F4A37F0>]}
+23:53:33.136078 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+23:53:33.136078 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+23:53:33.136078 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+23:53:33.141018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2c14c92c-23a5-4e06-ac30-1c2ba0a8a16b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F5B5F30>]}
+23:53:33.145985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2c14c92c-23a5-4e06-ac30-1c2ba0a8a16b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F591AB0>]}
+23:53:33.145985 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 190 macros, 0 operations, 3 seed files, 8 sources, 0 exposures, 0 metrics
+23:53:33.145985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2c14c92c-23a5-4e06-ac30-1c2ba0a8a16b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F591B40>]}
+23:53:33.146985 [info ] [MainThread]: 
+23:53:33.148080 [debug] [MainThread]: Acquiring new teradata connection "master"
+23:53:33.149036 [debug] [ThreadPool]: Acquiring new teradata connection "list_schemas"
+23:53:33.156000 [debug] [ThreadPool]: Using teradata connection "list_schemas"
+23:53:33.156000 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_schemas"} */
+SELECT DatabaseName AS schema_name
+        FROM DBC.DatabasesV
+23:53:33.157000 [debug] [ThreadPool]: Opening a new connection, currently in state init
+23:53:37.216940 [debug] [ThreadPool]: SQL status: OK in 4.06 seconds
+23:53:37.219253 [debug] [ThreadPool]: On list_schemas: Close
+23:53:37.312996 [debug] [ThreadPool]: Acquiring new teradata connection "list_None_teddybank"
+23:53:37.319069 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+23:53:37.319585 [debug] [ThreadPool]: On list_None_teddybank: 
+23:53:37.319585 [debug] [ThreadPool]: Opening a new connection, currently in state init
+23:53:38.868279 [debug] [ThreadPool]: SQL status: OK in 1.55 seconds
+23:53:38.869055 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+23:53:38.869786 [debug] [ThreadPool]: On list_None_teddybank: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_None_teddybank"} */
+SELECT
+      NULL AS "database",
+      TableName AS name,
+      DatabaseName AS "schema",
+      CASE WHEN TableKind = 'T' THEN 'table'
+        WHEN TableKind = 'O' THEN 'table'
+        WHEN TableKind = 'V' THEN 'view'
+        ELSE TableKind
+      END AS table_type
+    FROM DBC.TablesV
+    WHERE DatabaseName = 'teddybank' (NOT CASESPECIFIC)
+      AND TableKind IN ('T', 'V', 'O')
+
+  
+23:53:39.094314 [debug] [ThreadPool]: SQL status: OK in 0.22 seconds
+23:53:39.098696 [debug] [ThreadPool]: On list_None_teddybank: ROLLBACK
+23:53:39.184831 [debug] [ThreadPool]: On list_None_teddybank: Close
+23:53:39.280348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2c14c92c-23a5-4e06-ac30-1c2ba0a8a16b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F590A30>]}
+23:53:39.281120 [debug] [MainThread]: Using teradata connection "master"
+23:53:39.281120 [debug] [MainThread]: On master: 
+23:53:39.281765 [debug] [MainThread]: Opening a new connection, currently in state init
+23:53:40.936405 [debug] [MainThread]: SQL status: OK in 1.65 seconds
+23:53:40.936993 [debug] [MainThread]: On master: COMMIT
+23:53:40.937554 [debug] [MainThread]: Using teradata connection "master"
+23:53:40.937586 [debug] [MainThread]: On master: COMMIT
+23:53:41.034916 [debug] [MainThread]: SQL status: OK in 0.1 seconds
+23:53:41.035654 [debug] [MainThread]: On master: Close
+23:53:41.132311 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+23:53:41.133506 [info ] [MainThread]: 
+23:53:41.146138 [debug] [Thread-1 (]: Began running node model.dbt_transformation.Analytic_Dataset
+23:53:41.147139 [info ] [Thread-1 (]: 1 of 1 START table model teddybank.Analytic_Dataset ............................ [RUN]
+23:53:41.149135 [debug] [Thread-1 (]: Acquiring new teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:53:41.149135 [debug] [Thread-1 (]: Began compiling node model.dbt_transformation.Analytic_Dataset
+23:53:41.150153 [debug] [Thread-1 (]: Compiling model.dbt_transformation.Analytic_Dataset
+23:53:41.191167 [info ] [Thread-1 (]: 
+            SELECT distinct acct_type from teddybank.raw_accounts;
+    
+23:53:41.194166 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:53:41.195166 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT distinct acct_type from teddybank.raw_accounts;
+    
+  
+23:53:41.195166 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+23:53:43.001679 [debug] [Thread-1 (]: SQL status: OK in 1.81 seconds
+23:53:43.003061 [info ] [Thread-1 (]: ('CC', 'SV', 'CK')
+23:53:43.028302 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:53:43.028302 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT json_hyperparameters from teddybank.Hyperparameters where id = 2;;
+    
+  
+23:53:43.209725 [debug] [Thread-1 (]: SQL status: OK in 0.18 seconds
+23:53:43.216206 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:53:43.216711 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT count(*) from dbc.TablesV where TableName='ohe_dimensionTable' and DataBaseName='teddybank';
+    
+  
+23:53:43.440725 [debug] [Thread-1 (]: SQL status: OK in 0.22 seconds
+23:53:43.450363 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+23:53:43.450363 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT json_hyperparameters from teddybank.Hyperparameters where id = 3;;
+    
+  
+23:53:43.630392 [debug] [Thread-1 (]: SQL status: OK in 0.18 seconds
+23:53:43.636221 [debug] [Thread-1 (]: finished collecting timing info
+23:53:43.636267 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: Close
+23:53:43.731766 [debug] [Thread-1 (]: Compilation Error in model Analytic_Dataset (models\VAL\Dimensions\Analytic_Dataset.sql)
+  the JSON object must be str, bytes or bytearray, not Undefined
+  
+  > in macro Onehotencoding_Transform (macros\OneHotEncoding.sql)
+  > called by macro getHyperparameters (macros\getHyperparameters.sql)
+  > called by model Analytic_Dataset (models\VAL\Dimensions\Analytic_Dataset.sql)
+23:53:43.732931 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2c14c92c-23a5-4e06-ac30-1c2ba0a8a16b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F46C790>]}
+23:53:43.733841 [error] [Thread-1 (]: 1 of 1 ERROR creating table model teddybank.Analytic_Dataset ................... [[31mERROR[0m in 2.58s]
+23:53:43.735511 [debug] [Thread-1 (]: Finished running node model.dbt_transformation.Analytic_Dataset
+23:53:43.736695 [debug] [MainThread]: Acquiring new teradata connection "master"
+23:53:43.737335 [debug] [MainThread]: Using teradata connection "master"
+23:53:43.737896 [debug] [MainThread]: On master: 
+23:53:43.738448 [debug] [MainThread]: Opening a new connection, currently in state closed
+23:53:45.371944 [debug] [MainThread]: SQL status: OK in 1.63 seconds
+23:53:45.372785 [debug] [MainThread]: On master: COMMIT
+23:53:45.373322 [debug] [MainThread]: Using teradata connection "master"
+23:53:45.373322 [debug] [MainThread]: On master: COMMIT
+23:53:45.456398 [debug] [MainThread]: SQL status: OK in 0.08 seconds
+23:53:45.457535 [debug] [MainThread]: On master: Close
+23:53:45.555109 [info ] [MainThread]: 
+23:53:45.556916 [info ] [MainThread]: Finished running 1 table model in 12.41s.
+23:53:45.558142 [debug] [MainThread]: Connection 'master' was properly closed.
+23:53:45.558798 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+23:53:45.559374 [debug] [MainThread]: Connection 'list_None_teddybank' was properly closed.
+23:53:45.559568 [debug] [MainThread]: Connection 'model.dbt_transformation.Analytic_Dataset' was properly closed.
+23:53:45.566203 [info ] [MainThread]: 
+23:53:45.567201 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+23:53:45.567201 [info ] [MainThread]: 
+23:53:45.568201 [error] [MainThread]: [33mCompilation Error in model Analytic_Dataset (models\VAL\Dimensions\Analytic_Dataset.sql)[0m
+23:53:45.568201 [error] [MainThread]:   the JSON object must be str, bytes or bytearray, not Undefined
+23:53:45.569201 [error] [MainThread]:   
+23:53:45.569201 [error] [MainThread]:   > in macro Onehotencoding_Transform (macros\OneHotEncoding.sql)
+23:53:45.570202 [error] [MainThread]:   > called by macro getHyperparameters (macros\getHyperparameters.sql)
+23:53:45.570202 [error] [MainThread]:   > called by model Analytic_Dataset (models\VAL\Dimensions\Analytic_Dataset.sql)
+23:53:45.571201 [info ] [MainThread]: 
+23:53:45.571201 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+23:53:45.572201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F5FA110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F59E890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001133F46DED0>]}
+
+
+============================== 2023-04-19 00:00:51.203067 | 9b872fff-dfac-4e62-a823-3e7014487dcb ==============================
+00:00:51.203067 [info ] [MainThread]: Running with dbt=1.1.0
+00:00:51.204072 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['Analytic_Dataset'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+00:00:51.204072 [debug] [MainThread]: Tracking: tracking
+00:00:51.217029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC1359F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC1377F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC1364A0>]}
+00:00:51.311042 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+00:00:51.311042 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+00:00:51.311042 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+00:00:51.316048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9b872fff-dfac-4e62-a823-3e7014487dcb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC275F30>]}
+00:00:51.320062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9b872fff-dfac-4e62-a823-3e7014487dcb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC251AB0>]}
+00:00:51.320062 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 190 macros, 0 operations, 3 seed files, 8 sources, 0 exposures, 0 metrics
+00:00:51.321061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b872fff-dfac-4e62-a823-3e7014487dcb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC251B40>]}
+00:00:51.322030 [info ] [MainThread]: 
+00:00:51.322030 [debug] [MainThread]: Acquiring new teradata connection "master"
+00:00:51.323029 [debug] [ThreadPool]: Acquiring new teradata connection "list_schemas"
+00:00:51.331046 [debug] [ThreadPool]: Using teradata connection "list_schemas"
+00:00:51.331046 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_schemas"} */
+SELECT DatabaseName AS schema_name
+        FROM DBC.DatabasesV
+00:00:51.331046 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:00:54.878838 [debug] [ThreadPool]: SQL status: OK in 3.55 seconds
+00:00:54.883640 [debug] [ThreadPool]: On list_schemas: Close
+00:00:54.985279 [debug] [ThreadPool]: Acquiring new teradata connection "list_None_teddybank"
+00:00:54.994993 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+00:00:54.994993 [debug] [ThreadPool]: On list_None_teddybank: 
+00:00:54.994993 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:00:56.541267 [debug] [ThreadPool]: SQL status: OK in 1.55 seconds
+00:00:56.541880 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+00:00:56.542554 [debug] [ThreadPool]: On list_None_teddybank: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_None_teddybank"} */
+SELECT
+      NULL AS "database",
+      TableName AS name,
+      DatabaseName AS "schema",
+      CASE WHEN TableKind = 'T' THEN 'table'
+        WHEN TableKind = 'O' THEN 'table'
+        WHEN TableKind = 'V' THEN 'view'
+        ELSE TableKind
+      END AS table_type
+    FROM DBC.TablesV
+    WHERE DatabaseName = 'teddybank' (NOT CASESPECIFIC)
+      AND TableKind IN ('T', 'V', 'O')
+
+  
+00:00:56.758847 [debug] [ThreadPool]: SQL status: OK in 0.22 seconds
+00:00:56.762678 [debug] [ThreadPool]: On list_None_teddybank: ROLLBACK
+00:00:56.848846 [debug] [ThreadPool]: On list_None_teddybank: Close
+00:00:56.944123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b872fff-dfac-4e62-a823-3e7014487dcb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC25F8B0>]}
+00:00:56.944645 [debug] [MainThread]: Using teradata connection "master"
+00:00:56.944712 [debug] [MainThread]: On master: 
+00:00:56.944712 [debug] [MainThread]: Opening a new connection, currently in state init
+00:00:58.494963 [debug] [MainThread]: SQL status: OK in 1.55 seconds
+00:00:58.495876 [debug] [MainThread]: On master: COMMIT
+00:00:58.496266 [debug] [MainThread]: Using teradata connection "master"
+00:00:58.496846 [debug] [MainThread]: On master: COMMIT
+00:00:58.580211 [debug] [MainThread]: SQL status: OK in 0.08 seconds
+00:00:58.581124 [debug] [MainThread]: On master: Close
+00:00:58.682666 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+00:00:58.684479 [info ] [MainThread]: 
+00:00:58.697711 [debug] [Thread-1 (]: Began running node model.dbt_transformation.Analytic_Dataset
+00:00:58.698737 [info ] [Thread-1 (]: 1 of 1 START table model teddybank.Analytic_Dataset ............................ [RUN]
+00:00:58.700659 [debug] [Thread-1 (]: Acquiring new teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:00:58.700659 [debug] [Thread-1 (]: Began compiling node model.dbt_transformation.Analytic_Dataset
+00:00:58.700659 [debug] [Thread-1 (]: Compiling model.dbt_transformation.Analytic_Dataset
+00:00:58.738746 [info ] [Thread-1 (]: 
+            SELECT distinct acct_type from teddybank.raw_accounts;
+    
+00:00:58.741688 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:00:58.741688 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT distinct acct_type from teddybank.raw_accounts;
+    
+  
+00:00:58.742729 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+00:01:00.446669 [debug] [Thread-1 (]: SQL status: OK in 1.7 seconds
+00:01:00.450330 [info ] [Thread-1 (]: ('CC', 'SV', 'CK')
+00:01:00.477368 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:01:00.477368 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT json_hyperparameters from teddybank.Hyperparameters where id = 2;;
+    
+  
+00:01:00.658425 [debug] [Thread-1 (]: SQL status: OK in 0.18 seconds
+00:01:00.669936 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:01:00.670450 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT count(*) from dbc.TablesV where TableName='ohe_dimensionTable' and DataBaseName='teddybank';
+    
+  
+00:01:00.846328 [debug] [Thread-1 (]: SQL status: OK in 0.18 seconds
+00:01:00.865325 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:01:00.865325 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT json_hyperparameters from teddybank.Hyperparameters where id = 3;;
+    
+  
+00:01:01.044282 [debug] [Thread-1 (]: SQL status: OK in 0.18 seconds
+00:01:01.046589 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_transformation.Analytic_Dataset"
+00:01:01.049028 [debug] [Thread-1 (]: finished collecting timing info
+00:01:01.049638 [debug] [Thread-1 (]: Began executing node model.dbt_transformation.Analytic_Dataset
+00:01:01.071331 [debug] [Thread-1 (]: Writing runtime SQL for node "model.dbt_transformation.Analytic_Dataset"
+00:01:01.072335 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:01:01.072335 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: 
+00:01:01.073057 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+00:01:01.073219 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:01:01.073300 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+  CREATE  TABLE
+  "teddybank"."Analytic_Dataset__dbt_tmp"
+  
+    AS (
+      SELECT * FROM (
+        
+
+
+
+
+
+
+with ADS as (
+
+SELECT * from TD_OneHotEncodingTransform(
+
+   
+ON (
+            select 
+       T1.cust_id,Min(T1.income) as income,Min(T1.age) as age,Min(T1.years_with_bank) as years_with_bank,Min(T1.nbr_children) as nbr_children, Min(T1.marital_status) as marital_status,Min(T1.gender) as gender,Min(T1.state_code) as state_code,Min(T2.acct_type) as acct_type
+       
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CC_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CC_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS SV_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS SV_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CK_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CK_avg_tran_amt
+       
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 1 THEN T3.tran_id ELSE NULL END) AS q1_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 2 THEN T3.tran_id ELSE NULL END) AS q2_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 3 THEN T3.tran_id ELSE NULL END) AS q3_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 4 THEN T3.tran_id ELSE NULL END) AS q4_trans_cnt
+       
+       ,current_timestamp(0) as event_timestamp
+        FROM teddybank.raw_customers AS T1
+        LEFT OUTER JOIN teddybank.raw_accounts AS T2
+            ON T1.cust_id = T2.cust_id
+        LEFT OUTER JOIN teddybank.raw_transactions AS T3
+            ON T2.acct_nbr = T3.acct_nbr
+        GROUP BY T1.cust_id
+) AS InputTable
+ON (
+        
+        SELECT * from TD_OneHotEncodingFit(
+            
+            ON (
+            select 
+       T1.cust_id,Min(T1.income) as income,Min(T1.age) as age,Min(T1.years_with_bank) as years_with_bank,Min(T1.nbr_children) as nbr_children, Min(T1.marital_status) as marital_status,Min(T1.gender) as gender,Min(T1.state_code) as state_code,Min(T2.acct_type) as acct_type
+       
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CC_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CC_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS SV_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS SV_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CK_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CK_avg_tran_amt
+       
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 1 THEN T3.tran_id ELSE NULL END) AS q1_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 2 THEN T3.tran_id ELSE NULL END) AS q2_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 3 THEN T3.tran_id ELSE NULL END) AS q3_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 4 THEN T3.tran_id ELSE NULL END) AS q4_trans_cnt
+       
+       ,current_timestamp(0) as event_timestamp
+        FROM teddybank.raw_customers AS T1
+        LEFT OUTER JOIN teddybank.raw_accounts AS T2
+            ON T1.cust_id = T2.cust_id
+        LEFT OUTER JOIN teddybank.raw_transactions AS T3
+            ON T2.acct_nbr = T3.acct_nbr
+        GROUP BY T1.cust_id
+) AS InputTable
+            ON teddybank.ohe_dimensionTable AS CategoryTable Dimension
+            
+            USING
+            IsInputDense('true')TargetColumn('gender','state_code','acct_type')
+            Approach('List')
+        
+            TargetColumnNames ('column_name')
+            CategoriesColumn ('category')CategoryCounts(2,6,3)
+        ) as dt
+ ) AS FitTable DIMENSION 
+USING
+IsInputDense('true')
+) as dt
+
+
+)
+
+select * from ADS
+      ) D
+    ) WITH DATA
+  
+  ;
+
+
+00:01:15.455247 [debug] [Thread-1 (]: SQL status: OK in 14.38 seconds
+00:01:15.468540 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:01:15.468540 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    DROP table /*+ IF EXISTS */ "teddybank"."Analytic_Dataset";
+  
+00:01:15.554386 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1219] [Teradata Database] [Error 3807] Object 'teddybank.Analytic_Dataset' does not exist.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:670
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:666
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+00:01:15.555411 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: ROLLBACK
+00:01:15.643149 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:01:15.643760 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: 
+00:01:15.644329 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+00:01:15.644329 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:01:15.644942 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    RENAME table "teddybank"."Analytic_Dataset__dbt_tmp" TO "teddybank"."Analytic_Dataset"
+  
+00:01:15.886261 [debug] [Thread-1 (]: SQL status: OK in 0.24 seconds
+00:01:15.897577 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: COMMIT
+00:01:15.897577 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:01:15.897577 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: COMMIT
+00:01:15.997825 [debug] [Thread-1 (]: SQL status: OK in 0.1 seconds
+00:01:16.009309 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:01:16.009309 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+DROP table /*+ IF EXISTS */ "teddybank"."Analytic_Dataset__dbt_backup";
+00:01:16.095128 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1219] [Teradata Database] [Error 3807] Object 'teddybank.Analytic_Dataset__dbt_backup' does not exist.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:670
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:666
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+00:01:16.100089 [debug] [Thread-1 (]: finished collecting timing info
+00:01:16.100660 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: Close
+00:01:16.198073 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b872fff-dfac-4e62-a823-3e7014487dcb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC2501F0>]}
+00:01:16.199197 [info ] [Thread-1 (]: 1 of 1 OK created table model teddybank.Analytic_Dataset ....................... [[32mOK[0m in 17.50s]
+00:01:16.201029 [debug] [Thread-1 (]: Finished running node model.dbt_transformation.Analytic_Dataset
+00:01:16.203511 [debug] [MainThread]: Acquiring new teradata connection "master"
+00:01:16.204080 [debug] [MainThread]: Using teradata connection "master"
+00:01:16.204654 [debug] [MainThread]: On master: 
+00:01:16.205249 [debug] [MainThread]: Opening a new connection, currently in state closed
+00:01:18.032231 [debug] [MainThread]: SQL status: OK in 1.83 seconds
+00:01:18.032561 [debug] [MainThread]: On master: COMMIT
+00:01:18.032693 [debug] [MainThread]: Using teradata connection "master"
+00:01:18.032693 [debug] [MainThread]: On master: COMMIT
+00:01:18.115705 [debug] [MainThread]: SQL status: OK in 0.08 seconds
+00:01:18.116233 [debug] [MainThread]: On master: Close
+00:01:18.216849 [info ] [MainThread]: 
+00:01:18.218260 [info ] [MainThread]: Finished running 1 table model in 26.89s.
+00:01:18.219615 [debug] [MainThread]: Connection 'master' was properly closed.
+00:01:18.220228 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+00:01:18.220345 [debug] [MainThread]: Connection 'list_None_teddybank' was properly closed.
+00:01:18.220960 [debug] [MainThread]: Connection 'model.dbt_transformation.Analytic_Dataset' was properly closed.
+00:01:18.232680 [info ] [MainThread]: 
+00:01:18.234281 [info ] [MainThread]: [32mCompleted successfully[0m
+00:01:18.234281 [info ] [MainThread]: 
+00:01:18.235293 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+00:01:18.236293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC2BA200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC25EB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EFC0670A0>]}
+
+
+============================== 2023-04-19 00:09:55.592906 | 15b2e60c-b19a-456b-ab57-506335265aae ==============================
+00:09:55.592906 [info ] [MainThread]: Running with dbt=1.1.0
+00:09:55.593907 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['Analytic_Dataset'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+00:09:55.593907 [debug] [MainThread]: Tracking: tracking
+00:09:55.605907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D3E1510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D3E2980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D3E37F0>]}
+00:09:55.965917 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+00:09:55.965917 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+00:09:55.965917 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+00:09:55.970918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '15b2e60c-b19a-456b-ab57-506335265aae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D4F5F60>]}
+00:09:55.974908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '15b2e60c-b19a-456b-ab57-506335265aae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D4D1AE0>]}
+00:09:55.975908 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 190 macros, 0 operations, 3 seed files, 8 sources, 0 exposures, 0 metrics
+00:09:55.975908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '15b2e60c-b19a-456b-ab57-506335265aae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D4D1B70>]}
+00:09:55.976908 [info ] [MainThread]: 
+00:09:55.976908 [debug] [MainThread]: Acquiring new teradata connection "master"
+00:09:55.977907 [debug] [ThreadPool]: Acquiring new teradata connection "list_schemas"
+00:09:55.985918 [debug] [ThreadPool]: Using teradata connection "list_schemas"
+00:09:55.985918 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_schemas"} */
+SELECT DatabaseName AS schema_name
+        FROM DBC.DatabasesV
+00:09:55.985918 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:10:01.160043 [debug] [ThreadPool]: SQL status: OK in 5.17 seconds
+00:10:01.164478 [debug] [ThreadPool]: On list_schemas: Close
+00:10:01.264698 [debug] [ThreadPool]: Acquiring new teradata connection "list_None_teddybank"
+00:10:01.275539 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+00:10:01.276537 [debug] [ThreadPool]: On list_None_teddybank: 
+00:10:01.276537 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:10:02.841068 [debug] [ThreadPool]: SQL status: OK in 1.56 seconds
+00:10:02.842818 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+00:10:02.843570 [debug] [ThreadPool]: On list_None_teddybank: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_None_teddybank"} */
+SELECT
+      NULL AS "database",
+      TableName AS name,
+      DatabaseName AS "schema",
+      CASE WHEN TableKind = 'T' THEN 'table'
+        WHEN TableKind = 'O' THEN 'table'
+        WHEN TableKind = 'V' THEN 'view'
+        ELSE TableKind
+      END AS table_type
+    FROM DBC.TablesV
+    WHERE DatabaseName = 'teddybank' (NOT CASESPECIFIC)
+      AND TableKind IN ('T', 'V', 'O')
+
+  
+00:10:03.031189 [debug] [ThreadPool]: SQL status: OK in 0.19 seconds
+00:10:03.035185 [debug] [ThreadPool]: On list_None_teddybank: ROLLBACK
+00:10:03.129097 [debug] [ThreadPool]: On list_None_teddybank: Close
+00:10:03.282445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '15b2e60c-b19a-456b-ab57-506335265aae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D4D0A90>]}
+00:10:03.283716 [debug] [MainThread]: Using teradata connection "master"
+00:10:03.284245 [debug] [MainThread]: On master: 
+00:10:03.284432 [debug] [MainThread]: Opening a new connection, currently in state init
+00:10:04.942493 [debug] [MainThread]: SQL status: OK in 1.66 seconds
+00:10:04.943463 [debug] [MainThread]: On master: COMMIT
+00:10:04.943638 [debug] [MainThread]: Using teradata connection "master"
+00:10:04.944218 [debug] [MainThread]: On master: COMMIT
+00:10:05.025879 [debug] [MainThread]: SQL status: OK in 0.08 seconds
+00:10:05.026404 [debug] [MainThread]: On master: Close
+00:10:05.121099 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+00:10:05.121241 [info ] [MainThread]: 
+00:10:05.127313 [debug] [Thread-1 (]: Began running node model.dbt_transformation.Analytic_Dataset
+00:10:05.127843 [info ] [Thread-1 (]: 1 of 1 START table model teddybank.Analytic_Dataset ............................ [RUN]
+00:10:05.128876 [debug] [Thread-1 (]: Acquiring new teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:05.128899 [debug] [Thread-1 (]: Began compiling node model.dbt_transformation.Analytic_Dataset
+00:10:05.128899 [debug] [Thread-1 (]: Compiling model.dbt_transformation.Analytic_Dataset
+00:10:05.158592 [info ] [Thread-1 (]: 
+            SELECT distinct acct_type from teddybank.raw_accounts;
+    
+00:10:05.160589 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:05.160589 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT distinct acct_type from teddybank.raw_accounts;
+    
+  
+00:10:05.160589 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+00:10:07.014280 [debug] [Thread-1 (]: SQL status: OK in 1.85 seconds
+00:10:07.017543 [info ] [Thread-1 (]: ('CC', 'SV', 'CK')
+00:10:07.052068 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:07.052068 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT json_hyperparameters from teddybank.Hyperparameters where id = 2;;
+    
+  
+00:10:07.225771 [debug] [Thread-1 (]: SQL status: OK in 0.17 seconds
+00:10:07.231827 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:07.232382 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT count(*) from dbc.TablesV where TableName='ohe_dimensionTable' and DataBaseName='teddybank';
+    
+  
+00:10:07.442252 [debug] [Thread-1 (]: SQL status: OK in 0.21 seconds
+00:10:07.462559 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:07.462559 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    
+            SELECT json_hyperparameters from teddybank.Hyperparameters where id = 3;;
+    
+  
+00:10:07.645319 [debug] [Thread-1 (]: SQL status: OK in 0.18 seconds
+00:10:07.647153 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_transformation.Analytic_Dataset"
+00:10:07.648297 [debug] [Thread-1 (]: finished collecting timing info
+00:10:07.648861 [debug] [Thread-1 (]: Began executing node model.dbt_transformation.Analytic_Dataset
+00:10:07.667709 [debug] [Thread-1 (]: Writing runtime SQL for node "model.dbt_transformation.Analytic_Dataset"
+00:10:07.668709 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:07.668709 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: 
+00:10:07.669544 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+00:10:07.669544 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:07.669544 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+  CREATE  TABLE
+  "teddybank"."Analytic_Dataset__dbt_tmp"
+  
+    AS (
+      SELECT * FROM (
+        
+
+
+
+
+
+
+with ADS as (
+
+SELECT * from TD_OneHotEncodingTransform(
+
+   
+ON (
+            select 
+       T1.cust_id,Min(T1.income) as income,Min(T1.age) as age,Min(T1.years_with_bank) as years_with_bank,Min(T1.nbr_children) as nbr_children, Min(T1.marital_status) as marital_status,Min(T1.gender) as gender,Min(T1.state_code) as state_code,Min(T2.acct_type) as acct_type
+       
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CC_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CC_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS SV_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS SV_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CK_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CK_avg_tran_amt
+       
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 1 THEN T3.tran_id ELSE NULL END) AS q1_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 2 THEN T3.tran_id ELSE NULL END) AS q2_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 3 THEN T3.tran_id ELSE NULL END) AS q3_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 4 THEN T3.tran_id ELSE NULL END) AS q4_trans_cnt
+       
+       ,current_timestamp(0) as event_timestamp
+        FROM teddybank.raw_customers AS T1
+        LEFT OUTER JOIN teddybank.raw_accounts AS T2
+            ON T1.cust_id = T2.cust_id
+        LEFT OUTER JOIN teddybank.raw_transactions AS T3
+            ON T2.acct_nbr = T3.acct_nbr
+        GROUP BY T1.cust_id
+) AS InputTable
+ON (
+        
+        SELECT * from TD_OneHotEncodingFit(
+            
+            ON (
+            select 
+       T1.cust_id,Min(T1.income) as income,Min(T1.age) as age,Min(T1.years_with_bank) as years_with_bank,Min(T1.nbr_children) as nbr_children, Min(T1.marital_status) as marital_status,Min(T1.gender) as gender,Min(T1.state_code) as state_code,Min(T2.acct_type) as acct_type
+       
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CC_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CC' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CC_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS SV_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'SV' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS SV_avg_tran_amt
+       
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T2.starting_balance+T2.ending_balance ELSE 0 END) AS CK_avg_bal
+       ,AVG(CASE WHEN T2.acct_type = 'CK' THEN T3.principal_amt+T3.interest_amt ELSE 0 END) AS CK_avg_tran_amt
+       
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 1 THEN T3.tran_id ELSE NULL END) AS q1_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 2 THEN T3.tran_id ELSE NULL END) AS q2_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 3 THEN T3.tran_id ELSE NULL END) AS q3_trans_cnt
+       
+       ,COUNT(CASE WHEN ((EXTRACT(MONTH FROM T3.tran_date) + 2) / 3) = 4 THEN T3.tran_id ELSE NULL END) AS q4_trans_cnt
+       
+       ,current_timestamp(0) as event_timestamp
+        FROM teddybank.raw_customers AS T1
+        LEFT OUTER JOIN teddybank.raw_accounts AS T2
+            ON T1.cust_id = T2.cust_id
+        LEFT OUTER JOIN teddybank.raw_transactions AS T3
+            ON T2.acct_nbr = T3.acct_nbr
+        GROUP BY T1.cust_id
+) AS InputTable
+            ON teddybank.ohe_dimensionTable AS CategoryTable Dimension
+            
+            USING
+            IsInputDense('true')TargetColumn('gender','state_code','acct_type')
+            Approach('List')
+        
+            TargetColumnNames ('column_name')
+            CategoriesColumn ('category')CategoryCounts(2,6,3)
+        ) as dt
+ ) AS FitTable DIMENSION 
+USING
+IsInputDense('true')
+) as dt
+
+
+)
+
+select * from ADS
+      ) D
+    ) WITH DATA
+  
+  ;
+
+
+00:10:22.055297 [debug] [Thread-1 (]: SQL status: OK in 14.39 seconds
+00:10:22.061849 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:22.061849 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    DROP table /*+ IF EXISTS */ "teddybank"."Analytic_Dataset__dbt_backup";
+  
+00:10:22.144250 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1224] [Teradata Database] [Error 3807] Object 'teddybank.Analytic_Dataset__dbt_backup' does not exist.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:670
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:666
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+00:10:22.144747 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: ROLLBACK
+00:10:22.233101 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:22.233679 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: 
+00:10:22.234258 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+00:10:22.234810 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:22.234889 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    RENAME table "teddybank"."Analytic_Dataset" TO "teddybank"."Analytic_Dataset__dbt_backup"
+  
+00:10:22.463912 [debug] [Thread-1 (]: SQL status: OK in 0.23 seconds
+00:10:22.465256 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:22.465775 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    DROP table /*+ IF EXISTS */ "teddybank"."Analytic_Dataset";
+  
+00:10:22.551148 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1224] [Teradata Database] [Error 3807] Object 'teddybank.Analytic_Dataset' does not exist.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:670
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:666
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+00:10:22.552013 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: ROLLBACK
+00:10:22.641849 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:22.642443 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: 
+00:10:22.643007 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+00:10:22.643577 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:22.644158 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+
+    RENAME table "teddybank"."Analytic_Dataset__dbt_tmp" TO "teddybank"."Analytic_Dataset"
+  
+00:10:22.858029 [debug] [Thread-1 (]: SQL status: OK in 0.21 seconds
+00:10:22.878129 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: COMMIT
+00:10:22.878129 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:22.879129 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: COMMIT
+00:10:22.961392 [debug] [Thread-1 (]: SQL status: OK in 0.08 seconds
+00:10:22.970109 [debug] [Thread-1 (]: Using teradata connection "model.dbt_transformation.Analytic_Dataset"
+00:10:22.970179 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "model.dbt_transformation.Analytic_Dataset"} */
+DROP table /*+ IF EXISTS */ "teddybank"."Analytic_Dataset__dbt_backup";
+00:10:23.199203 [debug] [Thread-1 (]: SQL status: OK in 0.23 seconds
+00:10:23.201745 [debug] [Thread-1 (]: finished collecting timing info
+00:10:23.202380 [debug] [Thread-1 (]: On model.dbt_transformation.Analytic_Dataset: Close
+00:10:23.381391 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '15b2e60c-b19a-456b-ab57-506335265aae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D4B3A30>]}
+00:10:23.382264 [info ] [Thread-1 (]: 1 of 1 OK created table model teddybank.Analytic_Dataset ....................... [[32mOK[0m in 18.25s]
+00:10:23.384090 [debug] [Thread-1 (]: Finished running node model.dbt_transformation.Analytic_Dataset
+00:10:23.386711 [debug] [MainThread]: Acquiring new teradata connection "master"
+00:10:23.387346 [debug] [MainThread]: Using teradata connection "master"
+00:10:23.387967 [debug] [MainThread]: On master: 
+00:10:23.387967 [debug] [MainThread]: Opening a new connection, currently in state closed
+00:10:24.957993 [debug] [MainThread]: SQL status: OK in 1.57 seconds
+00:10:24.959585 [debug] [MainThread]: On master: COMMIT
+00:10:24.960434 [debug] [MainThread]: Using teradata connection "master"
+00:10:24.961038 [debug] [MainThread]: On master: COMMIT
+00:10:25.079082 [debug] [MainThread]: SQL status: OK in 0.12 seconds
+00:10:25.079689 [debug] [MainThread]: On master: Close
+00:10:25.184587 [info ] [MainThread]: 
+00:10:25.185662 [info ] [MainThread]: Finished running 1 table model in 29.21s.
+00:10:25.186836 [debug] [MainThread]: Connection 'master' was properly closed.
+00:10:25.187391 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+00:10:25.187957 [debug] [MainThread]: Connection 'list_None_teddybank' was properly closed.
+00:10:25.187957 [debug] [MainThread]: Connection 'model.dbt_transformation.Analytic_Dataset' was properly closed.
+00:10:25.199062 [info ] [MainThread]: 
+00:10:25.200058 [info ] [MainThread]: [32mCompleted successfully[0m
+00:10:25.201053 [info ] [MainThread]: 
+00:10:25.201053 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+00:10:25.202053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D4DE8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D53B5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002233D532830>]}

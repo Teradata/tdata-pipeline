@@ -1,0 +1,7 @@
+
+    truncate table "teddybank"."customers_";
+    -- dbt seed --
+    insert into "teddybank"."customers_" ("cust_id", "income", "age", "years_with_bank", "nbr_children", "gender", "marital_status", "name_prefix", "first_name", "last_name", "street_nbr", "street_name", "postal_code", "city_name", "state_code") values
+                (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        
+  

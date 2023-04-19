@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: teddybank
+    tables:
+      - name: raw_customers
+        description: Customers details
+        freshness: # default freshness
+          warn_after: {count: 20, period: hour}
+        loaded_at_field: created_timestamp
+      - name: raw_accounts
+        description: Account details of customers
+        freshness: # default freshness
+          warn_after: {count: 20, period: hour}
+        loaded_at_field: created_timestamp
+      - name: raw_transactions
+        description: Transactions done by customers
+        freshness: # default freshness
+          warn_after: {count: 20, period: hour}
+        loaded_at_field: created_timestamp
+      - name: ohe_dimensionTable
+        description: Onehot encoding categories table
+      - name: OHE_Hyperparameters
+        description: Fit table Hyperparameters table for Onehot
+      - name: OHE_Transform_Hyperparameters
+        description: Transformation Hyperparameters table for Onehot
+      - name: bc_dimensionTable
+        description: Dimensions table for Bincoding
+      - name: BC_Hyperparameters
+        description: Fit table Hyperparameters table for Bincoding

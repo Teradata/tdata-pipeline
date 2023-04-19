@@ -1,0 +1,57 @@
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'dbt_transformation'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_transformation'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["data"]
+macro-paths: ["macros"]
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/ directory
+# as tables. These settings can be overridden in the individual model files
+# using the `{{ config(...) }}` macro.
+models:
+  dbt_transformation:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: view
+
+      
+vars:
+    db: "teddybank"
+        # OneHotEncoding
+    ohe_dimensionTable : "ohe_dimensionTable"
+    ohe_inputtable: "onehot_titanic_dataset"
+    OHE_Hyperparameters : "OHE_Hyperparameters"
+    OHE_Transform_Hyperparameters : "OHE_Transform_Hyperparameters"
+    OHE_1 : "2"
+    OHE_transform_1: "3"
+    OHE_2 : "4"
+    OHE_transform_2: "5"
+
+
+    #Bincoding
+    bc_dimensionTable : "bc_dimensionTable"
+    bc_inputtable: "onehot_titanic_dataset"
+    Hyperparameters : "Hyperparameters"
+    BC_1 : "4"
+    Bincoding_output_accumulate_columns : ['Passenger_id']

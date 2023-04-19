@@ -1,0 +1,1949 @@
+
+
+============================== 2023-04-18 19:02:20.559660 | 6c669ad9-4ac9-4ab5-afe2-b9ef499f9326 ==============================
+19:02:20.559660 [info ] [MainThread]: Running with dbt=1.1.0
+19:02:20.560642 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+19:02:20.560642 [debug] [MainThread]: Tracking: tracking
+19:02:20.572642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025972E15510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025972E16950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025972E177F0>]}
+19:02:20.585653 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+19:02:20.586641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6c669ad9-4ac9-4ab5-afe2-b9ef499f9326', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025972E2F7C0>]}
+19:02:20.837641 [debug] [MainThread]: Parsing macros\adapters.sql
+19:02:20.850641 [debug] [MainThread]: Parsing macros\catalog.sql
+19:02:20.855641 [debug] [MainThread]: Parsing macros\materializations\incremental\helpers.sql
+19:02:20.856641 [debug] [MainThread]: Parsing macros\materializations\incremental\incremental.sql
+19:02:20.859641 [debug] [MainThread]: Parsing macros\materializations\seed\seed.sql
+19:02:20.871641 [debug] [MainThread]: Parsing macros\materializations\snapshot\snapshot.sql
+19:02:20.890640 [debug] [MainThread]: Parsing macros\materializations\snapshot\snapshot_merge.sql
+19:02:20.891641 [debug] [MainThread]: Parsing macros\materializations\snapshot\strategies.sql
+19:02:20.891641 [debug] [MainThread]: Parsing macros\materializations\test\test.sql
+19:02:20.892641 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+19:02:20.898641 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+19:02:20.900641 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+19:02:20.902641 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+19:02:20.906640 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+19:02:20.909641 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+19:02:20.914641 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+19:02:20.916641 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+19:02:20.921640 [debug] [MainThread]: Parsing macros\etc\statement.sql
+19:02:20.923641 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+19:02:20.924641 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+19:02:20.925641 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+19:02:20.925641 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+19:02:20.926641 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+19:02:20.927641 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+19:02:20.928641 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+19:02:20.929641 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+19:02:20.931641 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+19:02:20.933641 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+19:02:20.936641 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+19:02:20.942640 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+19:02:20.943641 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+19:02:20.952640 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+19:02:20.961641 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+19:02:20.963641 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+19:02:20.967640 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+19:02:20.969641 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+19:02:20.970641 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+19:02:20.971641 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+19:02:20.975640 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+19:02:20.985641 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+19:02:20.989640 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+19:02:20.997641 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+19:02:21.003640 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+19:02:21.004641 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+19:02:21.014640 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+19:02:21.015641 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+19:02:21.018640 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+19:02:21.019641 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+19:02:21.174641 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+19:02:21.179642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6c669ad9-4ac9-4ab5-afe2-b9ef499f9326', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025972F240D0>]}
+19:02:21.183642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6c669ad9-4ac9-4ab5-afe2-b9ef499f9326', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025972EE39A0>]}
+19:02:21.183642 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+19:02:21.184641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c669ad9-4ac9-4ab5-afe2-b9ef499f9326', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025972EE04F0>]}
+19:02:21.185643 [info ] [MainThread]: 
+19:02:21.185643 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+19:02:21.190642 [info ] [MainThread]: 
+19:02:21.190642 [info ] [MainThread]: [32mCompleted successfully[0m
+19:02:21.191642 [info ] [MainThread]: 
+19:02:21.191642 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+19:02:21.192642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025972E2FC40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025972E2E080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025972EE1450>]}
+
+
+============================== 2023-04-18 19:04:50.601613 | 98b2d231-06f9-48f6-ae7c-7704f6dabf88 ==============================
+19:04:50.601613 [info ] [MainThread]: Running with dbt=1.1.0
+19:04:50.602609 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+19:04:50.602609 [debug] [MainThread]: Tracking: tracking
+19:04:50.614516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3942A5510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3942A68F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3942A77F0>]}
+19:04:50.650529 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+19:04:50.650529 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+19:04:50.650529 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+19:04:50.654529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '98b2d231-06f9-48f6-ae7c-7704f6dabf88', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3943B63E0>]}
+19:04:50.658518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '98b2d231-06f9-48f6-ae7c-7704f6dabf88', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3943963E0>]}
+19:04:50.658518 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+19:04:50.658518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98b2d231-06f9-48f6-ae7c-7704f6dabf88', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D394396350>]}
+19:04:50.659548 [info ] [MainThread]: 
+19:04:50.659548 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+19:04:50.663517 [info ] [MainThread]: 
+19:04:50.664517 [info ] [MainThread]: [32mCompleted successfully[0m
+19:04:50.664517 [info ] [MainThread]: 
+19:04:50.664517 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+19:04:50.665532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3943949A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D394395E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3943946A0>]}
+
+
+============================== 2023-04-18 19:06:03.313119 | 225de10f-b4c1-4f92-b6fd-8d11948203a4 ==============================
+19:06:03.313119 [info ] [MainThread]: Running with dbt=1.1.0
+19:06:03.313119 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+19:06:03.313119 [debug] [MainThread]: Tracking: tracking
+19:06:03.325030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557EA559F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557EA57790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557EA56440>]}
+19:06:03.351042 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+19:06:03.351042 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+19:06:03.352042 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+19:06:03.356045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '225de10f-b4c1-4f92-b6fd-8d11948203a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557EB663E0>]}
+19:06:03.359030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '225de10f-b4c1-4f92-b6fd-8d11948203a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557EB463E0>]}
+19:06:03.359030 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+19:06:03.360030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '225de10f-b4c1-4f92-b6fd-8d11948203a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557EB46350>]}
+19:06:03.360030 [info ] [MainThread]: 
+19:06:03.361044 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+19:06:03.364028 [info ] [MainThread]: 
+19:06:03.364028 [info ] [MainThread]: [32mCompleted successfully[0m
+19:06:03.364028 [info ] [MainThread]: 
+19:06:03.364028 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+19:06:03.365053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557EB449A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557EB45E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557EB446A0>]}
+
+
+============================== 2023-04-18 19:09:48.456403 | 086e2d20-2095-4474-9553-10ee81f5e4aa ==============================
+19:09:48.456403 [info ] [MainThread]: Running with dbt=1.1.0
+19:09:48.456403 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+19:09:48.456403 [debug] [MainThread]: Tracking: tracking
+19:09:48.468288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC9BD5510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC9BD6920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC9BD77F0>]}
+19:09:48.495278 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+19:09:48.495278 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+19:09:48.495278 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+19:09:48.500293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '086e2d20-2095-4474-9553-10ee81f5e4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC9CE6410>]}
+19:09:48.504282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '086e2d20-2095-4474-9553-10ee81f5e4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC9CC6410>]}
+19:09:48.504282 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+19:09:48.505312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '086e2d20-2095-4474-9553-10ee81f5e4aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC9CC6380>]}
+19:09:48.505312 [info ] [MainThread]: 
+19:09:48.506302 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+19:09:48.510280 [info ] [MainThread]: 
+19:09:48.510280 [info ] [MainThread]: [32mCompleted successfully[0m
+19:09:48.510280 [info ] [MainThread]: 
+19:09:48.511279 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+19:09:48.511279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC9CC49D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC9CC5EA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC9CC46D0>]}
+
+
+============================== 2023-04-18 19:11:22.566791 | fad1c63c-6f06-4f9e-a0a7-f37b761a19c8 ==============================
+19:11:22.566791 [info ] [MainThread]: Running with dbt=1.1.0
+19:11:22.566791 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+19:11:22.566791 [debug] [MainThread]: Tracking: tracking
+19:11:22.579796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001881FC05510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001881FC06950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001881FC077F0>]}
+19:11:22.606698 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+19:11:22.607698 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+19:11:22.607698 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+19:11:22.611697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fad1c63c-6f06-4f9e-a0a7-f37b761a19c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001881FD16440>]}
+19:11:22.615697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fad1c63c-6f06-4f9e-a0a7-f37b761a19c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001881FCF6440>]}
+19:11:22.615697 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+19:11:22.616698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fad1c63c-6f06-4f9e-a0a7-f37b761a19c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001881FCF63B0>]}
+19:11:22.616698 [info ] [MainThread]: 
+19:11:22.617698 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+19:11:22.620703 [info ] [MainThread]: 
+19:11:22.621737 [info ] [MainThread]: [32mCompleted successfully[0m
+19:11:22.621737 [info ] [MainThread]: 
+19:11:22.622737 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+19:11:22.622737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001881FCF4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001881FCF5ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001881FCF4700>]}
+
+
+============================== 2023-04-18 19:11:48.991096 | 5d516165-355e-4caa-af36-096974c68d3c ==============================
+19:11:48.991096 [info ] [MainThread]: Running with dbt=1.1.0
+19:11:48.992092 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+19:11:48.992092 [debug] [MainThread]: Tracking: tracking
+19:11:49.005206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C43E65510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C43E66950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C43E677F0>]}
+19:11:49.030204 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+19:11:49.031217 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+19:11:49.031217 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+19:11:49.035205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5d516165-355e-4caa-af36-096974c68d3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C43F76440>]}
+19:11:49.038205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5d516165-355e-4caa-af36-096974c68d3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C43F56440>]}
+19:11:49.039205 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+19:11:49.039205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5d516165-355e-4caa-af36-096974c68d3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C43F563B0>]}
+19:11:49.040205 [info ] [MainThread]: 
+19:11:49.040205 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+19:11:49.043205 [info ] [MainThread]: 
+19:11:49.044206 [info ] [MainThread]: [32mCompleted successfully[0m
+19:11:49.044206 [info ] [MainThread]: 
+19:11:49.045205 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+19:11:49.045205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C43F54A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C43F55ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C43F54700>]}
+
+
+============================== 2023-04-18 19:14:12.252139 | b39c6c99-3101-4e7b-b3dd-52d4a431b1a0 ==============================
+19:14:12.252139 [info ] [MainThread]: Running with dbt=1.1.0
+19:14:12.252139 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+19:14:12.252139 [debug] [MainThread]: Tracking: tracking
+19:14:12.266054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDB51510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDB52950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDB537F0>]}
+19:14:12.276170 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+19:14:12.277055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b39c6c99-3101-4e7b-b3dd-52d4a431b1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDB52A10>]}
+19:14:12.352071 [debug] [MainThread]: Parsing macros\adapters.sql
+19:14:12.363170 [debug] [MainThread]: Parsing macros\catalog.sql
+19:14:12.368177 [debug] [MainThread]: Parsing macros\materializations\incremental\helpers.sql
+19:14:12.369170 [debug] [MainThread]: Parsing macros\materializations\incremental\incremental.sql
+19:14:12.372186 [debug] [MainThread]: Parsing macros\materializations\seed\seed.sql
+19:14:12.382570 [debug] [MainThread]: Parsing macros\materializations\snapshot\snapshot.sql
+19:14:12.400604 [debug] [MainThread]: Parsing macros\materializations\snapshot\snapshot_merge.sql
+19:14:12.402609 [debug] [MainThread]: Parsing macros\materializations\snapshot\strategies.sql
+19:14:12.402609 [debug] [MainThread]: Parsing macros\materializations\test\test.sql
+19:14:12.403604 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+19:14:12.409602 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+19:14:12.411609 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+19:14:12.412612 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+19:14:12.416609 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+19:14:12.419610 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+19:14:12.424607 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+19:14:12.426609 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+19:14:12.431547 [debug] [MainThread]: Parsing macros\etc\statement.sql
+19:14:12.433609 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+19:14:12.434606 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+19:14:12.435608 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+19:14:12.435608 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+19:14:12.436607 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+19:14:12.437609 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+19:14:12.438611 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+19:14:12.439608 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+19:14:12.441608 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+19:14:12.443615 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+19:14:12.446608 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+19:14:12.451614 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+19:14:12.452615 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+19:14:12.462613 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+19:14:12.470607 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+19:14:12.472610 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+19:14:12.476612 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+19:14:12.478607 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+19:14:12.479607 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+19:14:12.480614 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+19:14:12.499606 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+19:14:12.509601 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+19:14:12.512610 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+19:14:12.520603 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+19:14:12.526609 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+19:14:12.527608 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+19:14:12.537607 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+19:14:12.538611 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+19:14:12.540615 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+19:14:12.542550 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+19:14:12.693544 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+19:14:12.698551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b39c6c99-3101-4e7b-b3dd-52d4a431b1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDC2BEE0>]}
+19:14:12.702563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b39c6c99-3101-4e7b-b3dd-52d4a431b1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDB51510>]}
+19:14:12.702563 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 3 seed files, 0 sources, 0 exposures, 0 metrics
+19:14:12.702563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b39c6c99-3101-4e7b-b3dd-52d4a431b1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDC2BD90>]}
+19:14:12.705571 [info ] [MainThread]: 
+19:14:12.706572 [debug] [MainThread]: Acquiring new teradata connection "master"
+19:14:12.707555 [debug] [ThreadPool]: Acquiring new teradata connection "list_schemas"
+19:14:12.715519 [debug] [ThreadPool]: Using teradata connection "list_schemas"
+19:14:12.715519 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_schemas"} */
+SELECT DatabaseName AS schema_name
+        FROM DBC.DatabasesV
+19:14:12.715519 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:14:18.127700 [debug] [ThreadPool]: SQL status: OK in 5.41 seconds
+19:14:18.131578 [debug] [ThreadPool]: On list_schemas: Close
+19:14:18.230769 [debug] [ThreadPool]: Acquiring new teradata connection "list_None_teddybank"
+19:14:18.243699 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+19:14:18.244712 [debug] [ThreadPool]: On list_None_teddybank: 
+19:14:18.244712 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:14:19.787608 [debug] [ThreadPool]: SQL status: OK in 1.54 seconds
+19:14:19.788263 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+19:14:19.788677 [debug] [ThreadPool]: On list_None_teddybank: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_None_teddybank"} */
+SELECT
+      NULL AS "database",
+      TableName AS name,
+      DatabaseName AS "schema",
+      CASE WHEN TableKind = 'T' THEN 'table'
+        WHEN TableKind = 'O' THEN 'table'
+        WHEN TableKind = 'V' THEN 'view'
+        ELSE TableKind
+      END AS table_type
+    FROM DBC.TablesV
+    WHERE DatabaseName = 'teddybank' (NOT CASESPECIFIC)
+      AND TableKind IN ('T', 'V', 'O')
+
+  
+19:14:20.010689 [debug] [ThreadPool]: SQL status: OK in 0.22 seconds
+19:14:20.013730 [debug] [ThreadPool]: On list_None_teddybank: ROLLBACK
+19:14:20.109078 [debug] [ThreadPool]: On list_None_teddybank: Close
+19:14:20.203260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b39c6c99-3101-4e7b-b3dd-52d4a431b1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209ED727F70>]}
+19:14:20.203448 [debug] [MainThread]: Using teradata connection "master"
+19:14:20.203448 [debug] [MainThread]: On master: 
+19:14:20.204012 [debug] [MainThread]: Opening a new connection, currently in state init
+19:14:21.793037 [debug] [MainThread]: SQL status: OK in 1.59 seconds
+19:14:21.793930 [debug] [MainThread]: On master: COMMIT
+19:14:21.794252 [debug] [MainThread]: Using teradata connection "master"
+19:14:21.794834 [debug] [MainThread]: On master: COMMIT
+19:14:21.882728 [debug] [MainThread]: SQL status: OK in 0.09 seconds
+19:14:21.883431 [debug] [MainThread]: On master: Close
+19:14:21.995285 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+19:14:21.996829 [info ] [MainThread]: 
+19:14:22.017661 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.accounts_
+19:14:22.018632 [info ] [Thread-1 (]: 1 of 3 START seed file teddybank.accounts_ ..................................... [RUN]
+19:14:22.019740 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.accounts_"
+19:14:22.020809 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.accounts_
+19:14:22.020809 [debug] [Thread-1 (]: finished collecting timing info
+19:14:22.021848 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.accounts_
+19:14:22.123848 [debug] [Thread-1 (]: model : {'raw_sql': '', 'resource_type': 'seed', 'depends_on': {'macros': [], 'nodes': []}, 'config': {'enabled': True, 'tags': [], 'meta': {}, 'materialized': 'seed', 'persist_docs': {}, 'quoting': {}, 'column_types': {}, 'on_schema_change': 'ignore', 'post-hook': [], 'pre-hook': []}, 'schema': 'teddybank', 'fqn': ['dbt_transformation', 'accounts_'], 'unique_id': 'seed.dbt_transformation.accounts_', 'package_name': 'dbt_transformation', 'root_path': 'C:\\Users\\rc255085\\Projs\\td_pipeline', 'path': 'accounts_.csv', 'original_file_path': 'data\\accounts_.csv', 'name': 'accounts_', 'alias': 'accounts_', 'checksum': {'name': 'sha256', 'checksum': '464ca4fb38ab4553f35de9e7472eb9b56de5c4a438e80d1edce1211c85464334'}, 'tags': [], 'refs': [], 'sources': [], 'description': '', 'columns': {}, 'meta': {}, 'docs': {'show': True}, 'deferred': False, 'unrendered_config': {}, 'created_at': 1681845252.6726158}
+19:14:22.134846 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.accounts_"
+19:14:22.134846 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: 
+19:14:22.134846 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+19:14:23.711251 [debug] [Thread-1 (]: SQL status: OK in 1.58 seconds
+19:14:23.712222 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.accounts_"
+19:14:23.712863 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.accounts_"} */
+
+    
+    CREATE  TABLE "teddybank"."accounts_"
+    
+    ("acct_nbr" INTEGER,"cust_id" INTEGER,"acct_type" LONG VARCHAR,"account_active" LONG VARCHAR,"acct_start_date" DATE,"acct_end_date" DATE,"starting_balance" FLOAT,"ending_balance" FLOAT)
+    ;
+
+  
+19:14:23.938408 [debug] [Thread-1 (]: SQL status: OK in 0.23 seconds
+19:14:23.964836 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.accounts_"
+19:14:23.964836 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: insert into "teddybank"."accounts_" ("acct_nbr", "cust_id", "acct_type", "account_active", "acct_start_date", "acct_end_date", "starting_balance", "ending_balance") values
+                (?,?,?,?,?,?,?,?)
+        ...
+19:14:24.408483 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1168] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 1409 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+Caused by [Version 17.20.0.12] [Session 1168] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+19:14:24.408483 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: ROLLBACK
+19:14:24.505637 [debug] [Thread-1 (]: finished collecting timing info
+19:14:24.505980 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: Close
+19:14:24.605245 [debug] [Thread-1 (]: Database Error in seed accounts_ (data\accounts_.csv)
+  [Version 17.20.0.12] [Session 1168] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 1409 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+  Caused by [Version 17.20.0.12] [Session 1168] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+   at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+   at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+   at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+   at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+19:14:24.606300 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b39c6c99-3101-4e7b-b3dd-52d4a431b1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDBF2B60>]}
+19:14:24.606916 [error] [Thread-1 (]: 1 of 3 ERROR loading seed file teddybank.accounts_ ............................. [[31mERROR[0m in 2.59s]
+19:14:24.608128 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.accounts_
+19:14:24.609233 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.customers_
+19:14:24.609821 [info ] [Thread-1 (]: 2 of 3 START seed file teddybank.customers_ .................................... [RUN]
+19:14:24.610894 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.customers_"
+19:14:24.611426 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.customers_
+19:14:24.612013 [debug] [Thread-1 (]: finished collecting timing info
+19:14:24.612013 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.customers_
+19:14:24.696151 [debug] [Thread-1 (]: model : {'raw_sql': '', 'resource_type': 'seed', 'depends_on': {'macros': [], 'nodes': []}, 'config': {'enabled': True, 'tags': [], 'meta': {}, 'materialized': 'seed', 'persist_docs': {}, 'quoting': {}, 'column_types': {}, 'on_schema_change': 'ignore', 'post-hook': [], 'pre-hook': []}, 'schema': 'teddybank', 'fqn': ['dbt_transformation', 'customers_'], 'unique_id': 'seed.dbt_transformation.customers_', 'package_name': 'dbt_transformation', 'root_path': 'C:\\Users\\rc255085\\Projs\\td_pipeline', 'path': 'customers_.csv', 'original_file_path': 'data\\customers_.csv', 'name': 'customers_', 'alias': 'customers_', 'checksum': {'name': 'sha256', 'checksum': 'd7c012234f563e2a98fb7831537c838c5cc80ce995b401173d3cd61c1003c64b'}, 'tags': [], 'refs': [], 'sources': [], 'description': '', 'columns': {}, 'meta': {}, 'docs': {'show': True}, 'deferred': False, 'unrendered_config': {}, 'created_at': 1681845252.6796172}
+19:14:24.705155 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers_"
+19:14:24.705155 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: 
+19:14:24.705155 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+19:14:26.228154 [debug] [Thread-1 (]: SQL status: OK in 1.52 seconds
+19:14:26.228633 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers_"
+19:14:26.229114 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.customers_"} */
+
+    
+    CREATE  TABLE "teddybank"."customers_"
+    
+    ("cust_id" INTEGER,"income" INTEGER,"age" INTEGER,"years_with_bank" INTEGER,"nbr_children" INTEGER,"gender" LONG VARCHAR,"marital_status" INTEGER,"name_prefix" LONG VARCHAR,"first_name" LONG VARCHAR,"last_name" LONG VARCHAR,"street_nbr" INTEGER,"street_name" LONG VARCHAR,"postal_code" INTEGER,"city_name" LONG VARCHAR,"state_code" LONG VARCHAR)
+    ;
+
+  
+19:14:26.440059 [debug] [Thread-1 (]: SQL status: OK in 0.21 seconds
+19:14:26.452246 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers_"
+19:14:26.452246 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: insert into "teddybank"."customers_" ("cust_id", "income", "age", "years_with_bank", "nbr_children", "gender", "marital_status", "name_prefix", "first_name", "last_name", "street_nbr", "street_name", "postal_code", "city_name", "state_code") values
+                (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        ...
+19:14:27.142613 [debug] [Thread-1 (]: SQL status: OK in 0.69 seconds
+19:14:27.153029 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_transformation.customers_"
+19:14:27.161127 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: COMMIT
+19:14:27.161127 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers_"
+19:14:27.162129 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: COMMIT
+19:14:27.246265 [debug] [Thread-1 (]: SQL status: OK in 0.08 seconds
+19:14:27.247169 [debug] [Thread-1 (]: finished collecting timing info
+19:14:27.247785 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: Close
+19:14:27.341533 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b39c6c99-3101-4e7b-b3dd-52d4a431b1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDBDD510>]}
+19:14:27.342846 [info ] [Thread-1 (]: 2 of 3 OK loaded seed file teddybank.customers_ ................................ [[32mINSERT 747[0m in 2.73s]
+19:14:27.344062 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.customers_
+19:14:27.344632 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.transactions_
+19:14:27.345735 [info ] [Thread-1 (]: 3 of 3 START seed file teddybank.transactions_ ................................. [RUN]
+19:14:27.347023 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.transactions_"
+19:14:27.347592 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.transactions_
+19:14:27.348162 [debug] [Thread-1 (]: finished collecting timing info
+19:14:27.348717 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.transactions_
+19:14:31.033979 [debug] [Thread-1 (]: model : {'raw_sql': '', 'resource_type': 'seed', 'depends_on': {'macros': [], 'nodes': []}, 'config': {'enabled': True, 'tags': [], 'meta': {}, 'materialized': 'seed', 'persist_docs': {}, 'quoting': {}, 'column_types': {}, 'on_schema_change': 'ignore', 'post-hook': [], 'pre-hook': []}, 'schema': 'teddybank', 'fqn': ['dbt_transformation', 'transactions_'], 'unique_id': 'seed.dbt_transformation.transactions_', 'package_name': 'dbt_transformation', 'root_path': 'C:\\Users\\rc255085\\Projs\\td_pipeline', 'path': 'transactions_.csv', 'original_file_path': 'data\\transactions_.csv', 'name': 'transactions_', 'alias': 'transactions_', 'checksum': {'name': 'path', 'checksum': 'data\\transactions_.csv'}, 'tags': [], 'refs': [], 'sources': [], 'description': '', 'columns': {}, 'meta': {}, 'docs': {'show': True}, 'deferred': False, 'unrendered_config': {}, 'created_at': 1681845252.681548}
+19:14:31.650756 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+19:14:31.650756 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: 
+19:14:31.650756 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+19:14:33.190737 [debug] [Thread-1 (]: SQL status: OK in 1.54 seconds
+19:14:33.191323 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+19:14:33.191657 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.transactions_"} */
+
+    
+    CREATE  TABLE "teddybank"."transactions_"
+    
+    ("tran_id" INTEGER,"acct_nbr" INTEGER,"tran_amt" FLOAT,"principal_amt" FLOAT,"interest_amt" FLOAT,"new_balance" FLOAT,"tran_date" DATE,"tran_time" INTEGER,"channel" LONG VARCHAR,"tran_code" LONG VARCHAR)
+    ;
+
+  
+19:14:33.400369 [debug] [Thread-1 (]: SQL status: OK in 0.21 seconds
+19:14:33.421772 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+19:14:33.421772 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: insert into "teddybank"."transactions_" ("tran_id", "acct_nbr", "tran_amt", "principal_amt", "interest_amt", "new_balance", "tran_date", "tran_time", "channel", "tran_code") values
+                (?,?,?,?,?,?,?,?,?,?)
+        ...
+19:14:34.032463 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1170] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+Caused by [Version 17.20.0.12] [Session 1170] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+19:14:34.032463 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: ROLLBACK
+19:14:34.118173 [debug] [Thread-1 (]: finished collecting timing info
+19:14:34.118173 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: Close
+19:14:34.216958 [debug] [Thread-1 (]: Database Error in seed transactions_ (data\transactions_.csv)
+  [Version 17.20.0.12] [Session 1170] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+  Caused by [Version 17.20.0.12] [Session 1170] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+   at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+   at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+   at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+   at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+19:14:34.217922 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b39c6c99-3101-4e7b-b3dd-52d4a431b1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDC84CA0>]}
+19:14:34.218530 [error] [Thread-1 (]: 3 of 3 ERROR loading seed file teddybank.transactions_ ......................... [[31mERROR[0m in 6.87s]
+19:14:34.220208 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.transactions_
+19:14:34.225091 [debug] [MainThread]: Acquiring new teradata connection "master"
+19:14:34.225645 [debug] [MainThread]: Using teradata connection "master"
+19:14:34.226206 [debug] [MainThread]: On master: 
+19:14:34.226206 [debug] [MainThread]: Opening a new connection, currently in state closed
+19:14:35.748256 [debug] [MainThread]: SQL status: OK in 1.52 seconds
+19:14:35.749427 [debug] [MainThread]: On master: COMMIT
+19:14:35.750052 [debug] [MainThread]: Using teradata connection "master"
+19:14:35.750588 [debug] [MainThread]: On master: COMMIT
+19:14:35.834808 [debug] [MainThread]: SQL status: OK in 0.08 seconds
+19:14:35.835658 [debug] [MainThread]: On master: Close
+19:14:35.930198 [info ] [MainThread]: 
+19:14:35.932001 [info ] [MainThread]: Finished running 3 seeds in 23.22s.
+19:14:35.933253 [debug] [MainThread]: Connection 'master' was properly closed.
+19:14:35.933440 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+19:14:35.934044 [debug] [MainThread]: Connection 'list_None_teddybank' was properly closed.
+19:14:35.934649 [debug] [MainThread]: Connection 'seed.dbt_transformation.transactions_' was properly closed.
+19:14:35.949128 [info ] [MainThread]: 
+19:14:35.950129 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+19:14:35.951127 [info ] [MainThread]: 
+19:14:35.951127 [error] [MainThread]: [33mDatabase Error in seed accounts_ (data\accounts_.csv)[0m
+19:14:35.952126 [error] [MainThread]:   [Version 17.20.0.12] [Session 1168] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 1409 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+19:14:35.953128 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:14:35.954134 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+19:14:35.955129 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+19:14:35.956128 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:14:35.957126 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:14:35.957126 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:14:35.958126 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:14:35.959126 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:14:35.959126 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:14:35.960126 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:14:35.960126 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:14:35.961125 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:14:35.962127 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:14:35.962127 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:14:35.963125 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:14:35.964126 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:14:35.964126 [error] [MainThread]:   Caused by [Version 17.20.0.12] [Session 1168] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+19:14:35.965125 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:14:35.965125 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+19:14:35.966124 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+19:14:35.966124 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+19:14:35.967125 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+19:14:35.967125 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+19:14:35.968126 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+19:14:35.968126 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:14:35.969125 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:14:35.969125 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:14:35.969125 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:14:35.970123 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:14:35.970123 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:14:35.971125 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:14:35.971125 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:14:35.972124 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:14:35.972124 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:14:35.973124 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:14:35.973124 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:14:35.973124 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:14:35.974124 [info ] [MainThread]: 
+19:14:35.974124 [error] [MainThread]: [33mDatabase Error in seed transactions_ (data\transactions_.csv)[0m
+19:14:35.975124 [error] [MainThread]:   [Version 17.20.0.12] [Session 1170] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+19:14:35.975124 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:14:35.976125 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+19:14:35.976125 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+19:14:35.977125 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:14:35.977125 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:14:35.977125 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:14:35.978124 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:14:35.978124 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:14:35.979124 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:14:35.979124 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:14:35.980125 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:14:35.980125 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:14:35.980125 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:14:35.981126 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:14:35.981126 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:14:35.982124 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:14:35.983129 [error] [MainThread]:   Caused by [Version 17.20.0.12] [Session 1170] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+19:14:35.983129 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:14:35.984124 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+19:14:35.984124 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+19:14:35.985124 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+19:14:35.985124 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+19:14:35.985124 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+19:14:35.986126 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+19:14:35.986126 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:14:35.987124 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:14:35.987124 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:14:35.988124 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:14:35.988124 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:14:35.988124 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:14:35.989128 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:14:35.989128 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:14:35.990124 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:14:35.990124 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:14:35.991126 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:14:35.991126 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:14:35.992125 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:14:35.992125 [info ] [MainThread]: 
+19:14:35.992125 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=2 SKIP=0 TOTAL=3
+19:14:35.993123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209ED6DBAF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209ED6DB670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209EDC868C0>]}
+
+
+============================== 2023-04-18 19:17:42.651777 | 5667797d-ab53-49d8-bbac-16b757edd921 ==============================
+19:17:42.651777 [info ] [MainThread]: Running with dbt=1.1.0
+19:17:42.651777 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+19:17:42.651777 [debug] [MainThread]: Tracking: tracking
+19:17:42.664766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F111510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F112920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F1137F0>]}
+19:17:42.992766 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+19:17:42.992766 [debug] [MainThread]: Partial parsing: added file: dbt_transformation://data\customers.csv
+19:17:42.992766 [debug] [MainThread]: Partial parsing: added file: dbt_transformation://data\transactions.csv
+19:17:43.011766 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+19:17:43.015778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5667797d-ab53-49d8-bbac-16b757edd921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F23AA40>]}
+19:17:43.018766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5667797d-ab53-49d8-bbac-16b757edd921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F1CB940>]}
+19:17:43.019766 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 5 seed files, 0 sources, 0 exposures, 0 metrics
+19:17:43.019766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5667797d-ab53-49d8-bbac-16b757edd921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F1CBF70>]}
+19:17:43.020767 [info ] [MainThread]: 
+19:17:43.021766 [debug] [MainThread]: Acquiring new teradata connection "master"
+19:17:43.022766 [debug] [ThreadPool]: Acquiring new teradata connection "list_schemas"
+19:17:43.046769 [debug] [ThreadPool]: Using teradata connection "list_schemas"
+19:17:43.047769 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_schemas"} */
+SELECT DatabaseName AS schema_name
+        FROM DBC.DatabasesV
+19:17:43.047769 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:17:49.350672 [debug] [ThreadPool]: SQL status: OK in 6.3 seconds
+19:17:49.353008 [debug] [ThreadPool]: On list_schemas: Close
+19:17:49.449488 [debug] [ThreadPool]: Acquiring new teradata connection "list_None_teddybank"
+19:17:49.454207 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+19:17:49.454207 [debug] [ThreadPool]: On list_None_teddybank: 
+19:17:49.454751 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:17:50.993207 [debug] [ThreadPool]: SQL status: OK in 1.54 seconds
+19:17:50.993925 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+19:17:50.994637 [debug] [ThreadPool]: On list_None_teddybank: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_None_teddybank"} */
+SELECT
+      NULL AS "database",
+      TableName AS name,
+      DatabaseName AS "schema",
+      CASE WHEN TableKind = 'T' THEN 'table'
+        WHEN TableKind = 'O' THEN 'table'
+        WHEN TableKind = 'V' THEN 'view'
+        ELSE TableKind
+      END AS table_type
+    FROM DBC.TablesV
+    WHERE DatabaseName = 'teddybank' (NOT CASESPECIFIC)
+      AND TableKind IN ('T', 'V', 'O')
+
+  
+19:17:51.225702 [debug] [ThreadPool]: SQL status: OK in 0.23 seconds
+19:17:51.226585 [debug] [ThreadPool]: On list_None_teddybank: ROLLBACK
+19:17:51.311906 [debug] [ThreadPool]: On list_None_teddybank: Close
+19:17:51.410466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5667797d-ab53-49d8-bbac-16b757edd921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F1F0790>]}
+19:17:51.411974 [debug] [MainThread]: Using teradata connection "master"
+19:17:51.412570 [debug] [MainThread]: On master: 
+19:17:51.412570 [debug] [MainThread]: Opening a new connection, currently in state init
+19:17:53.014644 [debug] [MainThread]: SQL status: OK in 1.6 seconds
+19:17:53.014853 [debug] [MainThread]: On master: COMMIT
+19:17:53.014853 [debug] [MainThread]: Using teradata connection "master"
+19:17:53.014853 [debug] [MainThread]: On master: COMMIT
+19:17:53.108091 [debug] [MainThread]: SQL status: OK in 0.09 seconds
+19:17:53.109071 [debug] [MainThread]: On master: Close
+19:17:53.206639 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+19:17:53.207506 [info ] [MainThread]: 
+19:17:53.220839 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.accounts_
+19:17:53.221879 [info ] [Thread-1 (]: 1 of 5 START seed file teddybank.accounts_ ..................................... [RUN]
+19:17:53.222880 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.accounts_"
+19:17:53.223799 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.accounts_
+19:17:53.223799 [debug] [Thread-1 (]: finished collecting timing info
+19:17:53.224811 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.accounts_
+19:17:53.317887 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.accounts_"
+19:17:53.317887 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: 
+19:17:53.317887 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+19:17:54.891727 [debug] [Thread-1 (]: SQL status: OK in 1.57 seconds
+19:17:54.892388 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.accounts_"
+19:17:54.892441 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.accounts_"} */
+DELETE "teddybank"."accounts_" ALL
+19:17:55.070076 [debug] [Thread-1 (]: SQL status: OK in 0.18 seconds
+19:17:55.107604 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.accounts_"
+19:17:55.108609 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: insert into "teddybank"."accounts_" ("acct_nbr", "cust_id", "acct_type", "account_active", "acct_start_date", "acct_end_date", "starting_balance", "ending_balance") values
+                (?,?,?,?,?,?,?,?)
+        ...
+19:17:55.487976 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1176] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 1409 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+Caused by [Version 17.20.0.12] [Session 1176] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+19:17:55.488550 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: ROLLBACK
+19:17:55.575015 [debug] [Thread-1 (]: finished collecting timing info
+19:17:55.575724 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: Close
+19:17:55.686978 [debug] [Thread-1 (]: Database Error in seed accounts_ (data\accounts_.csv)
+  [Version 17.20.0.12] [Session 1176] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 1409 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+  Caused by [Version 17.20.0.12] [Session 1176] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+   at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+   at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+   at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+   at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+19:17:55.688009 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5667797d-ab53-49d8-bbac-16b757edd921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F15EC20>]}
+19:17:55.688661 [error] [Thread-1 (]: 1 of 5 ERROR loading seed file teddybank.accounts_ ............................. [[31mERROR[0m in 2.47s]
+19:17:55.689858 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.accounts_
+19:17:55.690983 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.customers
+19:17:55.691582 [info ] [Thread-1 (]: 2 of 5 START seed file teddybank.customers ..................................... [RUN]
+19:17:55.693321 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.customers"
+19:17:55.693919 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.customers
+19:17:55.694506 [debug] [Thread-1 (]: finished collecting timing info
+19:17:55.695023 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.customers
+19:17:55.767624 [debug] [Thread-1 (]: model : {'raw_sql': '', 'resource_type': 'seed', 'depends_on': {'macros': [], 'nodes': []}, 'config': {'enabled': True, 'tags': [], 'meta': {}, 'materialized': 'seed', 'persist_docs': {}, 'quoting': {}, 'column_types': {}, 'on_schema_change': 'ignore', 'post-hook': [], 'pre-hook': []}, 'schema': 'teddybank', 'fqn': ['dbt_transformation', 'customers'], 'unique_id': 'seed.dbt_transformation.customers', 'package_name': 'dbt_transformation', 'root_path': 'C:\\Users\\rc255085\\Projs\\td_pipeline', 'path': 'customers.csv', 'original_file_path': 'data\\customers.csv', 'name': 'customers', 'alias': 'customers', 'checksum': {'name': 'sha256', 'checksum': '3662b31c55f8b436e1163305afd136ca2a1c4d63645631b46fcc0070bdcab376'}, 'tags': [], 'refs': [], 'sources': [], 'description': '', 'columns': {}, 'meta': {}, 'docs': {'show': True}, 'deferred': False, 'unrendered_config': {}, 'created_at': 1681845462.9997654}
+19:17:55.778773 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers"
+19:17:55.778773 [debug] [Thread-1 (]: On seed.dbt_transformation.customers: 
+19:17:55.778773 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+19:17:57.316025 [debug] [Thread-1 (]: SQL status: OK in 1.54 seconds
+19:17:57.316384 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers"
+19:17:57.316472 [debug] [Thread-1 (]: On seed.dbt_transformation.customers: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.customers"} */
+
+    
+    CREATE  TABLE "teddybank"."customers"
+    
+    ("cust_id" INTEGER,"income" INTEGER,"age" INTEGER,"years_with_bank" INTEGER,"nbr_children" INTEGER,"gender" LONG VARCHAR,"marital_status" INTEGER,"name_prefix" LONG VARCHAR,"first_name" LONG VARCHAR,"last_name" LONG VARCHAR,"street_nbr" INTEGER,"street_name" LONG VARCHAR,"postal_code" INTEGER,"city_name" LONG VARCHAR,"state_code" LONG VARCHAR)
+    ;
+
+  
+19:17:57.530298 [debug] [Thread-1 (]: SQL status: OK in 0.21 seconds
+19:17:57.536563 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers"
+19:17:57.537083 [debug] [Thread-1 (]: On seed.dbt_transformation.customers: insert into "teddybank"."customers" ("cust_id", "income", "age", "years_with_bank", "nbr_children", "gender", "marital_status", "name_prefix", "first_name", "last_name", "street_nbr", "street_name", "postal_code", "city_name", "state_code") values
+                (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        ...
+19:17:58.188777 [debug] [Thread-1 (]: SQL status: OK in 0.65 seconds
+19:17:58.193215 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_transformation.customers"
+19:17:58.200345 [debug] [Thread-1 (]: On seed.dbt_transformation.customers: COMMIT
+19:17:58.200345 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers"
+19:17:58.201350 [debug] [Thread-1 (]: On seed.dbt_transformation.customers: COMMIT
+19:17:58.282180 [debug] [Thread-1 (]: SQL status: OK in 0.08 seconds
+19:17:58.282735 [debug] [Thread-1 (]: finished collecting timing info
+19:17:58.282735 [debug] [Thread-1 (]: On seed.dbt_transformation.customers: Close
+19:17:58.377058 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5667797d-ab53-49d8-bbac-16b757edd921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F352800>]}
+19:17:58.378268 [info ] [Thread-1 (]: 2 of 5 OK loaded seed file teddybank.customers ................................. [[32mINSERT 747[0m in 2.68s]
+19:17:58.378797 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.customers
+19:17:58.379354 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.customers_
+19:17:58.379354 [info ] [Thread-1 (]: 3 of 5 START seed file teddybank.customers_ .................................... [RUN]
+19:17:58.379869 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.customers_"
+19:17:58.380426 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.customers_
+19:17:58.380426 [debug] [Thread-1 (]: finished collecting timing info
+19:17:58.380426 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.customers_
+19:17:58.418359 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers_"
+19:17:58.418359 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: 
+19:17:58.419363 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+19:17:59.949860 [debug] [Thread-1 (]: SQL status: OK in 1.53 seconds
+19:17:59.950368 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers_"
+19:17:59.950519 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.customers_"} */
+DELETE "teddybank"."customers_" ALL
+19:18:00.164642 [debug] [Thread-1 (]: SQL status: OK in 0.21 seconds
+19:18:00.177018 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers_"
+19:18:00.177018 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: insert into "teddybank"."customers_" ("cust_id", "income", "age", "years_with_bank", "nbr_children", "gender", "marital_status", "name_prefix", "first_name", "last_name", "street_nbr", "street_name", "postal_code", "city_name", "state_code") values
+                (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        ...
+19:18:00.828618 [debug] [Thread-1 (]: SQL status: OK in 0.65 seconds
+19:18:00.829977 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_transformation.customers_"
+19:18:00.833527 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: COMMIT
+19:18:00.833527 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.customers_"
+19:18:00.834052 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: COMMIT
+19:18:00.915635 [debug] [Thread-1 (]: SQL status: OK in 0.08 seconds
+19:18:00.916912 [debug] [Thread-1 (]: finished collecting timing info
+19:18:00.917545 [debug] [Thread-1 (]: On seed.dbt_transformation.customers_: Close
+19:18:01.018990 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5667797d-ab53-49d8-bbac-16b757edd921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49DA57190>]}
+19:18:01.019821 [info ] [Thread-1 (]: 3 of 5 OK loaded seed file teddybank.customers_ ................................ [[32mINSERT 747[0m in 2.64s]
+19:18:01.021172 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.customers_
+19:18:01.021172 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.transactions
+19:18:01.021748 [info ] [Thread-1 (]: 4 of 5 START seed file teddybank.transactions .................................. [RUN]
+19:18:01.022378 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.transactions"
+19:18:01.022911 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.transactions
+19:18:01.022911 [debug] [Thread-1 (]: finished collecting timing info
+19:18:01.022911 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.transactions
+19:18:04.680820 [debug] [Thread-1 (]: model : {'raw_sql': '', 'resource_type': 'seed', 'depends_on': {'macros': [], 'nodes': []}, 'config': {'enabled': True, 'tags': [], 'meta': {}, 'materialized': 'seed', 'persist_docs': {}, 'quoting': {}, 'column_types': {}, 'on_schema_change': 'ignore', 'post-hook': [], 'pre-hook': []}, 'schema': 'teddybank', 'fqn': ['dbt_transformation', 'transactions'], 'unique_id': 'seed.dbt_transformation.transactions', 'package_name': 'dbt_transformation', 'root_path': 'C:\\Users\\rc255085\\Projs\\td_pipeline', 'path': 'transactions.csv', 'original_file_path': 'data\\transactions.csv', 'name': 'transactions', 'alias': 'transactions', 'checksum': {'name': 'path', 'checksum': 'data\\transactions.csv'}, 'tags': [], 'refs': [], 'sources': [], 'description': '', 'columns': {}, 'meta': {}, 'docs': {'show': True}, 'deferred': False, 'unrendered_config': {}, 'created_at': 1681845463.0077672}
+19:18:05.308729 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions"
+19:18:05.308729 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions: 
+19:18:05.308729 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+19:18:06.843597 [debug] [Thread-1 (]: SQL status: OK in 1.53 seconds
+19:18:06.844602 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions"
+19:18:06.845204 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.transactions"} */
+
+    
+    CREATE  TABLE "teddybank"."transactions"
+    
+    ("tran_id" INTEGER,"acct_nbr" INTEGER,"tran_amt" FLOAT,"principal_amt" FLOAT,"interest_amt" FLOAT,"new_balance" FLOAT,"tran_date" DATE,"tran_time" INTEGER,"channel" LONG VARCHAR,"tran_code" LONG VARCHAR)
+    ;
+
+  
+19:18:07.050869 [debug] [Thread-1 (]: SQL status: OK in 0.21 seconds
+19:18:07.083181 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions"
+19:18:07.084181 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions: insert into "teddybank"."transactions" ("tran_id", "acct_nbr", "tran_amt", "principal_amt", "interest_amt", "new_balance", "tran_date", "tran_time", "channel", "tran_code") values
+                (?,?,?,?,?,?,?,?,?,?)
+        ...
+19:18:07.688176 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1179] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+Caused by [Version 17.20.0.12] [Session 1179] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+19:18:07.688176 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions: ROLLBACK
+19:18:07.771950 [debug] [Thread-1 (]: finished collecting timing info
+19:18:07.772162 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions: Close
+19:18:07.865853 [debug] [Thread-1 (]: Database Error in seed transactions (data\transactions.csv)
+  [Version 17.20.0.12] [Session 1179] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+  Caused by [Version 17.20.0.12] [Session 1179] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+   at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+   at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+   at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+   at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+19:18:07.866577 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5667797d-ab53-49d8-bbac-16b757edd921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F1F2B90>]}
+19:18:07.866635 [error] [Thread-1 (]: 4 of 5 ERROR loading seed file teddybank.transactions .......................... [[31mERROR[0m in 6.84s]
+19:18:07.867191 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.transactions
+19:18:07.867723 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.transactions_
+19:18:07.867723 [info ] [Thread-1 (]: 5 of 5 START seed file teddybank.transactions_ ................................. [RUN]
+19:18:07.868806 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.transactions_"
+19:18:07.868806 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.transactions_
+19:18:07.869321 [debug] [Thread-1 (]: finished collecting timing info
+19:18:07.869321 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.transactions_
+19:18:11.490974 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+19:18:11.490974 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: 
+19:18:11.490974 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+19:18:13.019643 [debug] [Thread-1 (]: SQL status: OK in 1.53 seconds
+19:18:13.020229 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+19:18:13.020803 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.transactions_"} */
+DELETE "teddybank"."transactions_" ALL
+19:18:13.193956 [debug] [Thread-1 (]: SQL status: OK in 0.17 seconds
+19:18:13.216167 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+19:18:13.217166 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: insert into "teddybank"."transactions_" ("tran_id", "acct_nbr", "tran_amt", "principal_amt", "interest_amt", "new_balance", "tran_date", "tran_time", "channel", "tran_code") values
+                (?,?,?,?,?,?,?,?,?,?)
+        ...
+19:18:13.767786 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1180] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+Caused by [Version 17.20.0.12] [Session 1180] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+19:18:13.768800 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: ROLLBACK
+19:18:13.853050 [debug] [Thread-1 (]: finished collecting timing info
+19:18:13.853050 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: Close
+19:18:13.947417 [debug] [Thread-1 (]: Database Error in seed transactions_ (data\transactions_.csv)
+  [Version 17.20.0.12] [Session 1180] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+  Caused by [Version 17.20.0.12] [Session 1180] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+   at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+   at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+   at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+   at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+19:18:13.948073 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5667797d-ab53-49d8-bbac-16b757edd921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F235B40>]}
+19:18:13.948380 [error] [Thread-1 (]: 5 of 5 ERROR loading seed file teddybank.transactions_ ......................... [[31mERROR[0m in 6.08s]
+19:18:13.948756 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.transactions_
+19:18:13.950395 [debug] [MainThread]: Acquiring new teradata connection "master"
+19:18:13.950395 [debug] [MainThread]: Using teradata connection "master"
+19:18:13.950922 [debug] [MainThread]: On master: 
+19:18:13.950922 [debug] [MainThread]: Opening a new connection, currently in state closed
+19:18:15.488832 [debug] [MainThread]: SQL status: OK in 1.54 seconds
+19:18:15.488832 [debug] [MainThread]: On master: COMMIT
+19:18:15.489339 [debug] [MainThread]: Using teradata connection "master"
+19:18:15.489401 [debug] [MainThread]: On master: COMMIT
+19:18:15.607915 [debug] [MainThread]: SQL status: OK in 0.12 seconds
+19:18:15.607915 [debug] [MainThread]: On master: Close
+19:18:15.704088 [info ] [MainThread]: 
+19:18:15.704770 [info ] [MainThread]: Finished running 5 seeds in 32.68s.
+19:18:15.705302 [debug] [MainThread]: Connection 'master' was properly closed.
+19:18:15.705302 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+19:18:15.705302 [debug] [MainThread]: Connection 'list_None_teddybank' was properly closed.
+19:18:15.705302 [debug] [MainThread]: Connection 'seed.dbt_transformation.transactions_' was properly closed.
+19:18:15.709049 [info ] [MainThread]: 
+19:18:15.709584 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+19:18:15.710113 [info ] [MainThread]: 
+19:18:15.710113 [error] [MainThread]: [33mDatabase Error in seed accounts_ (data\accounts_.csv)[0m
+19:18:15.710641 [error] [MainThread]:   [Version 17.20.0.12] [Session 1176] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 1409 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+19:18:15.711169 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:18:15.711695 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+19:18:15.712221 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+19:18:15.712221 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:18:15.712747 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:18:15.713273 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:18:15.713801 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:18:15.714330 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:18:15.714330 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:18:15.714859 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:18:15.715376 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:18:15.715376 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:18:15.715376 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:18:15.716377 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:18:15.716377 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:18:15.717377 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:18:15.717377 [error] [MainThread]:   Caused by [Version 17.20.0.12] [Session 1176] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+19:18:15.717377 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:18:15.718375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+19:18:15.718375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+19:18:15.719375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+19:18:15.719375 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+19:18:15.720375 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+19:18:15.720375 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+19:18:15.720375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:18:15.721376 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:18:15.721376 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:18:15.722376 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:18:15.722376 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:18:15.722376 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:18:15.723376 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:18:15.723376 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:18:15.724376 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:18:15.724376 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:18:15.724376 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:18:15.725378 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:18:15.725378 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:18:15.726376 [info ] [MainThread]: 
+19:18:15.726376 [error] [MainThread]: [33mDatabase Error in seed transactions (data\transactions.csv)[0m
+19:18:15.727376 [error] [MainThread]:   [Version 17.20.0.12] [Session 1179] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+19:18:15.727376 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:18:15.727376 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+19:18:15.728376 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+19:18:15.728376 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:18:15.728376 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:18:15.728376 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:18:15.729376 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:18:15.729376 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:18:15.729376 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:18:15.730376 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:18:15.730376 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:18:15.731377 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:18:15.731377 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:18:15.731377 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:18:15.732376 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:18:15.732376 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:18:15.733377 [error] [MainThread]:   Caused by [Version 17.20.0.12] [Session 1179] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+19:18:15.733377 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:18:15.733377 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+19:18:15.734375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+19:18:15.734375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+19:18:15.734375 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+19:18:15.734375 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+19:18:15.735375 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+19:18:15.735375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:18:15.735375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:18:15.735375 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:18:15.736376 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:18:15.736376 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:18:15.736376 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:18:15.737376 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:18:15.737376 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:18:15.737376 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:18:15.737376 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:18:15.737376 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:18:15.738376 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:18:15.738376 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:18:15.738376 [info ] [MainThread]: 
+19:18:15.739376 [error] [MainThread]: [33mDatabase Error in seed transactions_ (data\transactions_.csv)[0m
+19:18:15.739376 [error] [MainThread]:   [Version 17.20.0.12] [Session 1180] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+19:18:15.739376 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:18:15.739376 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+19:18:15.740375 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+19:18:15.740375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:18:15.740375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:18:15.740375 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:18:15.741375 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:18:15.741375 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:18:15.741375 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:18:15.742375 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:18:15.742375 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:18:15.742375 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:18:15.742375 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:18:15.743376 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:18:15.743376 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:18:15.743376 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:18:15.743376 [error] [MainThread]:   Caused by [Version 17.20.0.12] [Session 1180] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+19:18:15.744375 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:18:15.744375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+19:18:15.744375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+19:18:15.744375 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+19:18:15.745374 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+19:18:15.745374 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+19:18:15.745374 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+19:18:15.745374 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:18:15.745374 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:18:15.746375 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:18:15.746375 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:18:15.746375 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:18:15.746375 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:18:15.746375 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:18:15.747374 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:18:15.747374 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:18:15.747374 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:18:15.748376 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:18:15.748376 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:18:15.748376 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:18:15.749377 [info ] [MainThread]: 
+19:18:15.749377 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=3 SKIP=0 TOTAL=5
+19:18:15.749377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49DA56380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49DA55F60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C49F2346D0>]}
+
+
+============================== 2023-04-18 19:18:32.624993 | e58ad72c-a838-4796-a02a-1ee24303003b ==============================
+19:18:32.624993 [info ] [MainThread]: Running with dbt=1.1.0
+19:18:32.625932 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+19:18:32.625932 [debug] [MainThread]: Tracking: tracking
+19:18:32.637947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC12A5510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC12A6950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC12A77F0>]}
+19:18:32.751986 [debug] [MainThread]: Partial parsing enabled: 4 files deleted, 0 files added, 0 files changed.
+19:18:32.751986 [debug] [MainThread]: Partial parsing: deleted file: dbt_transformation://data\customers.csv
+19:18:32.751986 [debug] [MainThread]: Partial parsing: deleted file: dbt_transformation://data\transactions.csv
+19:18:32.752986 [debug] [MainThread]: Partial parsing: deleted file: dbt_transformation://data\transactions_.csv
+19:18:32.752986 [debug] [MainThread]: Partial parsing: deleted file: dbt_transformation://data\customers_.csv
+19:18:32.754988 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+19:18:32.759893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e58ad72c-a838-4796-a02a-1ee24303003b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC13CC0D0>]}
+19:18:32.763895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e58ad72c-a838-4796-a02a-1ee24303003b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC1388E20>]}
+19:18:32.763895 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+19:18:32.763895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e58ad72c-a838-4796-a02a-1ee24303003b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC1388CD0>]}
+19:18:32.764893 [info ] [MainThread]: 
+19:18:32.765895 [debug] [MainThread]: Acquiring new teradata connection "master"
+19:18:32.766893 [debug] [ThreadPool]: Acquiring new teradata connection "list_schemas"
+19:18:32.774907 [debug] [ThreadPool]: Using teradata connection "list_schemas"
+19:18:32.774907 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_schemas"} */
+SELECT DatabaseName AS schema_name
+        FROM DBC.DatabasesV
+19:18:32.774907 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:18:38.654185 [debug] [ThreadPool]: SQL status: OK in 5.88 seconds
+19:18:38.659538 [debug] [ThreadPool]: On list_schemas: Close
+19:18:38.759056 [debug] [ThreadPool]: Acquiring new teradata connection "list_None_teddybank"
+19:18:38.772366 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+19:18:38.772366 [debug] [ThreadPool]: On list_None_teddybank: 
+19:18:38.772366 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:18:40.418832 [debug] [ThreadPool]: SQL status: OK in 1.65 seconds
+19:18:40.419868 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+19:18:40.420335 [debug] [ThreadPool]: On list_None_teddybank: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_None_teddybank"} */
+SELECT
+      NULL AS "database",
+      TableName AS name,
+      DatabaseName AS "schema",
+      CASE WHEN TableKind = 'T' THEN 'table'
+        WHEN TableKind = 'O' THEN 'table'
+        WHEN TableKind = 'V' THEN 'view'
+        ELSE TableKind
+      END AS table_type
+    FROM DBC.TablesV
+    WHERE DatabaseName = 'teddybank' (NOT CASESPECIFIC)
+      AND TableKind IN ('T', 'V', 'O')
+
+  
+19:18:40.662117 [debug] [ThreadPool]: SQL status: OK in 0.24 seconds
+19:18:40.665660 [debug] [ThreadPool]: On list_None_teddybank: ROLLBACK
+19:18:40.751772 [debug] [ThreadPool]: On list_None_teddybank: Close
+19:18:40.901833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e58ad72c-a838-4796-a02a-1ee24303003b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC1407790>]}
+19:18:40.902238 [debug] [MainThread]: Using teradata connection "master"
+19:18:40.902238 [debug] [MainThread]: On master: 
+19:18:40.902238 [debug] [MainThread]: Opening a new connection, currently in state init
+19:18:42.442983 [debug] [MainThread]: SQL status: OK in 1.54 seconds
+19:18:42.443701 [debug] [MainThread]: On master: COMMIT
+19:18:42.444148 [debug] [MainThread]: Using teradata connection "master"
+19:18:42.444148 [debug] [MainThread]: On master: COMMIT
+19:18:42.532622 [debug] [MainThread]: SQL status: OK in 0.09 seconds
+19:18:42.533079 [debug] [MainThread]: On master: Close
+19:18:42.629372 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+19:18:42.630084 [info ] [MainThread]: 
+19:18:42.635905 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.accounts_
+19:18:42.636426 [info ] [Thread-1 (]: 1 of 1 START seed file teddybank.accounts_ ..................................... [RUN]
+19:18:42.636988 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.accounts_"
+19:18:42.637520 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.accounts_
+19:18:42.637520 [debug] [Thread-1 (]: finished collecting timing info
+19:18:42.637520 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.accounts_
+19:18:42.730734 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.accounts_"
+19:18:42.730734 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: 
+19:18:42.730734 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+19:18:44.276920 [debug] [Thread-1 (]: SQL status: OK in 1.55 seconds
+19:18:44.278093 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.accounts_"
+19:18:44.278757 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.accounts_"} */
+DELETE "teddybank"."accounts_" ALL
+19:18:44.457483 [debug] [Thread-1 (]: SQL status: OK in 0.18 seconds
+19:18:44.496682 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.accounts_"
+19:18:44.496682 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: insert into "teddybank"."accounts_" ("acct_nbr", "cust_id", "acct_type", "account_active", "acct_start_date", "acct_end_date", "starting_balance", "ending_balance") values
+                (?,?,?,?,?,?,?,?)
+        ...
+19:18:44.901618 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1185] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 1409 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+Caused by [Version 17.20.0.12] [Session 1185] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+19:18:44.901692 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: ROLLBACK
+19:18:44.985086 [debug] [Thread-1 (]: finished collecting timing info
+19:18:44.985710 [debug] [Thread-1 (]: On seed.dbt_transformation.accounts_: Close
+19:18:45.086842 [debug] [Thread-1 (]: Database Error in seed accounts_ (data\accounts_.csv)
+  [Version 17.20.0.12] [Session 1185] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 1409 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+  Caused by [Version 17.20.0.12] [Session 1185] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+   at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+   at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+   at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+   at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+19:18:45.087960 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e58ad72c-a838-4796-a02a-1ee24303003b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CBFC17400>]}
+19:18:45.088558 [error] [Thread-1 (]: 1 of 1 ERROR loading seed file teddybank.accounts_ ............................. [[31mERROR[0m in 2.45s]
+19:18:45.089711 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.accounts_
+19:18:45.092730 [debug] [MainThread]: Acquiring new teradata connection "master"
+19:18:45.092730 [debug] [MainThread]: Using teradata connection "master"
+19:18:45.093329 [debug] [MainThread]: On master: 
+19:18:45.093329 [debug] [MainThread]: Opening a new connection, currently in state closed
+19:18:46.636104 [debug] [MainThread]: SQL status: OK in 1.54 seconds
+19:18:46.636781 [debug] [MainThread]: On master: COMMIT
+19:18:46.637297 [debug] [MainThread]: Using teradata connection "master"
+19:18:46.637393 [debug] [MainThread]: On master: COMMIT
+19:18:46.724433 [debug] [MainThread]: SQL status: OK in 0.09 seconds
+19:18:46.725394 [debug] [MainThread]: On master: Close
+19:18:46.821381 [info ] [MainThread]: 
+19:18:46.822487 [info ] [MainThread]: Finished running 1 seed in 14.05s.
+19:18:46.823543 [debug] [MainThread]: Connection 'master' was properly closed.
+19:18:46.823543 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+19:18:46.824145 [debug] [MainThread]: Connection 'list_None_teddybank' was properly closed.
+19:18:46.824145 [debug] [MainThread]: Connection 'seed.dbt_transformation.accounts_' was properly closed.
+19:18:46.831036 [info ] [MainThread]: 
+19:18:46.831560 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+19:18:46.832066 [info ] [MainThread]: 
+19:18:46.832066 [error] [MainThread]: [33mDatabase Error in seed accounts_ (data\accounts_.csv)[0m
+19:18:46.833075 [error] [MainThread]:   [Version 17.20.0.12] [Session 1185] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 1409 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+19:18:46.833075 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:18:46.834076 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+19:18:46.834076 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+19:18:46.835076 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:18:46.835076 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:18:46.836076 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:18:46.836076 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:18:46.836076 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:18:46.837076 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:18:46.837076 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:18:46.838087 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:18:46.838087 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:18:46.839075 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:18:46.839075 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:18:46.840076 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:18:46.840076 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:18:46.841075 [error] [MainThread]:   Caused by [Version 17.20.0.12] [Session 1185] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+19:18:46.841075 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:18:46.842076 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+19:18:46.842076 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+19:18:46.842076 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+19:18:46.843077 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+19:18:46.843077 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+19:18:46.844076 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+19:18:46.844076 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:18:46.845076 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:18:46.845076 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:18:46.845076 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:18:46.846076 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:18:46.846076 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:18:46.847075 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:18:46.847075 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:18:46.847075 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:18:46.848074 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:18:46.848074 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:18:46.849076 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:18:46.849076 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:18:46.850077 [info ] [MainThread]: 
+19:18:46.850077 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+19:18:46.850077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC139ED40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC13CE9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CBFC17DF0>]}
+
+
+============================== 2023-04-18 19:32:29.044481 | 18e81c6b-6e54-4d74-a675-376ca64e1e76 ==============================
+19:32:29.044481 [info ] [MainThread]: Running with dbt=1.1.0
+19:32:29.045493 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+19:32:29.045493 [debug] [MainThread]: Tracking: tracking
+19:32:29.058487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D8AC59F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D8AC7790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D8AC6440>]}
+19:32:29.308495 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+19:32:29.309483 [debug] [MainThread]: Partial parsing: added file: dbt_transformation://data\transactions_.csv
+19:32:29.309483 [debug] [MainThread]: Partial parsing: deleted file: dbt_transformation://data\accounts_.csv
+19:32:29.325496 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+19:32:29.329384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '18e81c6b-6e54-4d74-a675-376ca64e1e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D8C11F60>]}
+19:32:29.332384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '18e81c6b-6e54-4d74-a675-376ca64e1e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D8BABF10>]}
+19:32:29.332384 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+19:32:29.333385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '18e81c6b-6e54-4d74-a675-376ca64e1e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D8BA85E0>]}
+19:32:29.334385 [info ] [MainThread]: 
+19:32:29.334385 [debug] [MainThread]: Acquiring new teradata connection "master"
+19:32:29.336384 [debug] [ThreadPool]: Acquiring new teradata connection "list_schemas"
+19:32:29.344385 [debug] [ThreadPool]: Using teradata connection "list_schemas"
+19:32:29.344385 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_schemas"} */
+SELECT DatabaseName AS schema_name
+        FROM DBC.DatabasesV
+19:32:29.344385 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:32:33.341360 [debug] [ThreadPool]: SQL status: OK in 4.0 seconds
+19:32:33.346789 [debug] [ThreadPool]: On list_schemas: Close
+19:32:33.445685 [debug] [ThreadPool]: Acquiring new teradata connection "list_None_teddybank"
+19:32:33.478117 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+19:32:33.478117 [debug] [ThreadPool]: On list_None_teddybank: 
+19:32:33.479113 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:32:35.035251 [debug] [ThreadPool]: SQL status: OK in 1.56 seconds
+19:32:35.035932 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+19:32:35.036206 [debug] [ThreadPool]: On list_None_teddybank: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_None_teddybank"} */
+SELECT
+      NULL AS "database",
+      TableName AS name,
+      DatabaseName AS "schema",
+      CASE WHEN TableKind = 'T' THEN 'table'
+        WHEN TableKind = 'O' THEN 'table'
+        WHEN TableKind = 'V' THEN 'view'
+        ELSE TableKind
+      END AS table_type
+    FROM DBC.TablesV
+    WHERE DatabaseName = 'teddybank' (NOT CASESPECIFIC)
+      AND TableKind IN ('T', 'V', 'O')
+
+  
+19:32:35.211471 [debug] [ThreadPool]: SQL status: OK in 0.17 seconds
+19:32:35.215385 [debug] [ThreadPool]: On list_None_teddybank: ROLLBACK
+19:32:35.302464 [debug] [ThreadPool]: On list_None_teddybank: Close
+19:32:35.400331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '18e81c6b-6e54-4d74-a675-376ca64e1e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D73BE830>]}
+19:32:35.401217 [debug] [MainThread]: Using teradata connection "master"
+19:32:35.401775 [debug] [MainThread]: On master: 
+19:32:35.402328 [debug] [MainThread]: Opening a new connection, currently in state init
+19:32:37.043436 [debug] [MainThread]: SQL status: OK in 1.64 seconds
+19:32:37.044463 [debug] [MainThread]: On master: COMMIT
+19:32:37.044943 [debug] [MainThread]: Using teradata connection "master"
+19:32:37.045529 [debug] [MainThread]: On master: COMMIT
+19:32:37.131671 [debug] [MainThread]: SQL status: OK in 0.09 seconds
+19:32:37.132540 [debug] [MainThread]: On master: Close
+19:32:37.230910 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+19:32:37.232586 [info ] [MainThread]: 
+19:32:37.246571 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.transactions_
+19:32:37.247571 [info ] [Thread-1 (]: 1 of 1 START seed file teddybank.transactions_ ................................. [RUN]
+19:32:37.249572 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.transactions_"
+19:32:37.249572 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.transactions_
+19:32:37.250571 [debug] [Thread-1 (]: finished collecting timing info
+19:32:37.250571 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.transactions_
+19:32:40.999559 [debug] [Thread-1 (]: model : {'raw_sql': '', 'resource_type': 'seed', 'depends_on': {'macros': [], 'nodes': []}, 'config': {'enabled': True, 'tags': [], 'meta': {}, 'materialized': 'seed', 'persist_docs': {}, 'quoting': {}, 'column_types': {}, 'on_schema_change': 'ignore', 'post-hook': [], 'pre-hook': []}, 'schema': 'teddybank', 'fqn': ['dbt_transformation', 'transactions_'], 'unique_id': 'seed.dbt_transformation.transactions_', 'package_name': 'dbt_transformation', 'root_path': 'C:\\Users\\rc255085\\Projs\\td_pipeline', 'path': 'transactions_.csv', 'original_file_path': 'data\\transactions_.csv', 'name': 'transactions_', 'alias': 'transactions_', 'checksum': {'name': 'path', 'checksum': 'data\\transactions_.csv'}, 'tags': [], 'refs': [], 'sources': [], 'description': '', 'columns': {}, 'meta': {}, 'docs': {'show': True}, 'deferred': False, 'unrendered_config': {}, 'created_at': 1681846349.3154788}
+19:32:41.632841 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+19:32:41.632841 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: 
+19:32:41.632841 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+19:32:43.192572 [debug] [Thread-1 (]: SQL status: OK in 1.56 seconds
+19:32:43.193231 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+19:32:43.193808 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.transactions_"} */
+
+    
+    CREATE  TABLE "teddybank"."transactions_"
+    
+    ("tran_id" INTEGER,"acct_nbr" INTEGER,"tran_amt" FLOAT,"principal_amt" FLOAT,"interest_amt" FLOAT,"new_balance" FLOAT,"tran_date" DATE,"tran_time" INTEGER,"channel" LONG VARCHAR,"tran_code" LONG VARCHAR)
+    ;
+
+  
+19:32:43.401266 [debug] [Thread-1 (]: SQL status: OK in 0.21 seconds
+19:32:43.424647 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+19:32:43.424647 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: insert into "teddybank"."transactions_" ("tran_id", "acct_nbr", "tran_amt", "principal_amt", "interest_amt", "new_balance", "tran_date", "tran_time", "channel", "tran_code") values
+                (?,?,?,?,?,?,?,?,?,?)
+        ...
+19:32:44.046978 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1190] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+Caused by [Version 17.20.0.12] [Session 1190] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+19:32:44.047992 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: ROLLBACK
+19:32:44.133089 [debug] [Thread-1 (]: finished collecting timing info
+19:32:44.133694 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: Close
+19:32:44.246752 [debug] [Thread-1 (]: Database Error in seed transactions_ (data\transactions_.csv)
+  [Version 17.20.0.12] [Session 1190] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+  Caused by [Version 17.20.0.12] [Session 1190] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+   at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+   at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+   at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+   at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+19:32:44.248221 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '18e81c6b-6e54-4d74-a675-376ca64e1e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D8BCD840>]}
+19:32:44.249014 [error] [Thread-1 (]: 1 of 1 ERROR loading seed file teddybank.transactions_ ......................... [[31mERROR[0m in 7.00s]
+19:32:44.250625 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.transactions_
+19:32:44.253204 [debug] [MainThread]: Acquiring new teradata connection "master"
+19:32:44.253757 [debug] [MainThread]: Using teradata connection "master"
+19:32:44.254306 [debug] [MainThread]: On master: 
+19:32:44.254816 [debug] [MainThread]: Opening a new connection, currently in state closed
+19:32:45.798108 [debug] [MainThread]: SQL status: OK in 1.54 seconds
+19:32:45.798290 [debug] [MainThread]: On master: COMMIT
+19:32:45.798474 [debug] [MainThread]: Using teradata connection "master"
+19:32:45.798529 [debug] [MainThread]: On master: COMMIT
+19:32:45.883711 [debug] [MainThread]: SQL status: OK in 0.09 seconds
+19:32:45.884155 [debug] [MainThread]: On master: Close
+19:32:45.977693 [info ] [MainThread]: 
+19:32:45.979300 [info ] [MainThread]: Finished running 1 seed in 16.64s.
+19:32:45.980806 [debug] [MainThread]: Connection 'master' was properly closed.
+19:32:45.981322 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+19:32:45.981422 [debug] [MainThread]: Connection 'list_None_teddybank' was properly closed.
+19:32:45.982101 [debug] [MainThread]: Connection 'seed.dbt_transformation.transactions_' was properly closed.
+19:32:45.993266 [info ] [MainThread]: 
+19:32:45.994468 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+19:32:45.994468 [info ] [MainThread]: 
+19:32:45.995539 [error] [MainThread]: [33mDatabase Error in seed transactions_ (data\transactions_.csv)[0m
+19:32:45.996524 [error] [MainThread]:   [Version 17.20.0.12] [Session 1190] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+19:32:45.996524 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:32:45.997478 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+19:32:45.997478 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+19:32:45.998478 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:32:45.998478 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:32:45.999477 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:32:45.999477 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:32:46.000478 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:32:46.001484 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:32:46.002478 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:32:46.002478 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:32:46.003478 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:32:46.003478 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:32:46.003478 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:32:46.004478 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:32:46.004478 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:32:46.005477 [error] [MainThread]:   Caused by [Version 17.20.0.12] [Session 1190] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+19:32:46.005477 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+19:32:46.006476 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+19:32:46.006476 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+19:32:46.007480 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+19:32:46.007480 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+19:32:46.007480 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+19:32:46.008479 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+19:32:46.008479 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+19:32:46.009480 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+19:32:46.009480 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+19:32:46.010477 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+19:32:46.010477 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+19:32:46.011480 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+19:32:46.011480 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+19:32:46.011480 [error] [MainThread]:    at main.goCreateRows goside.go:668
+19:32:46.012476 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+19:32:46.012476 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+19:32:46.013478 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+19:32:46.013478 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+19:32:46.014478 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+19:32:46.014478 [info ] [MainThread]: 
+19:32:46.015481 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+19:32:46.016483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D73D7310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D74363B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297D8BCD540>]}
+
+
+============================== 2023-04-18 23:08:19.500992 | 8d86884a-a580-44a3-8bdf-f1016914007f ==============================
+23:08:19.500992 [info ] [MainThread]: Running with dbt=1.1.0
+23:08:19.501992 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+23:08:19.501992 [debug] [MainThread]: Tracking: tracking
+23:08:19.514992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022108215510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221082168C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221082177F0>]}
+23:08:19.758992 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+23:08:19.759993 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+23:08:19.759993 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+23:08:19.763993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8d86884a-a580-44a3-8bdf-f1016914007f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022108326710>]}
+23:08:19.767993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8d86884a-a580-44a3-8bdf-f1016914007f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002210830A5F0>]}
+23:08:19.767993 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+23:08:19.767993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8d86884a-a580-44a3-8bdf-f1016914007f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002210830A7D0>]}
+23:08:19.768993 [info ] [MainThread]: 
+23:08:19.769992 [debug] [MainThread]: Acquiring new teradata connection "master"
+23:08:19.770993 [debug] [ThreadPool]: Acquiring new teradata connection "list_schemas"
+23:08:19.777993 [debug] [ThreadPool]: Using teradata connection "list_schemas"
+23:08:19.777993 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_schemas"} */
+SELECT DatabaseName AS schema_name
+        FROM DBC.DatabasesV
+23:08:19.777993 [debug] [ThreadPool]: Opening a new connection, currently in state init
+23:08:24.096396 [debug] [ThreadPool]: SQL status: OK in 4.32 seconds
+23:08:24.102639 [debug] [ThreadPool]: On list_schemas: Close
+23:08:24.208649 [debug] [ThreadPool]: Acquiring new teradata connection "list_None_teddybank"
+23:08:24.222332 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+23:08:24.222332 [debug] [ThreadPool]: On list_None_teddybank: 
+23:08:24.223330 [debug] [ThreadPool]: Opening a new connection, currently in state init
+23:08:25.780077 [debug] [ThreadPool]: SQL status: OK in 1.56 seconds
+23:08:25.780461 [debug] [ThreadPool]: Using teradata connection "list_None_teddybank"
+23:08:25.780625 [debug] [ThreadPool]: On list_None_teddybank: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "connection_name": "list_None_teddybank"} */
+SELECT
+      NULL AS "database",
+      TableName AS name,
+      DatabaseName AS "schema",
+      CASE WHEN TableKind = 'T' THEN 'table'
+        WHEN TableKind = 'O' THEN 'table'
+        WHEN TableKind = 'V' THEN 'view'
+        ELSE TableKind
+      END AS table_type
+    FROM DBC.TablesV
+    WHERE DatabaseName = 'teddybank' (NOT CASESPECIFIC)
+      AND TableKind IN ('T', 'V', 'O')
+
+  
+23:08:26.029709 [debug] [ThreadPool]: SQL status: OK in 0.25 seconds
+23:08:26.033673 [debug] [ThreadPool]: On list_None_teddybank: ROLLBACK
+23:08:26.120300 [debug] [ThreadPool]: On list_None_teddybank: Close
+23:08:26.216186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8d86884a-a580-44a3-8bdf-f1016914007f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022108317C40>]}
+23:08:26.216796 [debug] [MainThread]: Using teradata connection "master"
+23:08:26.217370 [debug] [MainThread]: On master: 
+23:08:26.217944 [debug] [MainThread]: Opening a new connection, currently in state init
+23:08:27.810120 [debug] [MainThread]: SQL status: OK in 1.59 seconds
+23:08:27.810563 [debug] [MainThread]: On master: COMMIT
+23:08:27.811231 [debug] [MainThread]: Using teradata connection "master"
+23:08:27.811750 [debug] [MainThread]: On master: COMMIT
+23:08:27.896264 [debug] [MainThread]: SQL status: OK in 0.08 seconds
+23:08:27.897123 [debug] [MainThread]: On master: Close
+23:08:27.990897 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+23:08:27.992316 [info ] [MainThread]: 
+23:08:28.006661 [debug] [Thread-1 (]: Began running node seed.dbt_transformation.transactions_
+23:08:28.006661 [info ] [Thread-1 (]: 1 of 1 START seed file teddybank.transactions_ ................................. [RUN]
+23:08:28.008658 [debug] [Thread-1 (]: Acquiring new teradata connection "seed.dbt_transformation.transactions_"
+23:08:28.009691 [debug] [Thread-1 (]: Began compiling node seed.dbt_transformation.transactions_
+23:08:28.010663 [debug] [Thread-1 (]: finished collecting timing info
+23:08:28.010663 [debug] [Thread-1 (]: Began executing node seed.dbt_transformation.transactions_
+23:08:31.763017 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+23:08:31.763017 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: 
+23:08:31.763017 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+23:08:33.310489 [debug] [Thread-1 (]: SQL status: OK in 1.55 seconds
+23:08:33.311207 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+23:08:33.311731 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "dbt_transformation", "target_name": "dev", "node_id": "seed.dbt_transformation.transactions_"} */
+DELETE "teddybank"."transactions_" ALL
+23:08:33.516030 [debug] [Thread-1 (]: SQL status: OK in 0.2 seconds
+23:08:33.564841 [debug] [Thread-1 (]: Using teradata connection "seed.dbt_transformation.transactions_"
+23:08:33.564841 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: insert into "teddybank"."transactions_" ("tran_id", "acct_nbr", "tran_amt", "principal_amt", "interest_amt", "new_balance", "tran_date", "tran_time", "channel", "tran_code") values
+                (?,?,?,?,?,?,?,?,?,?)
+        ...
+23:08:34.247500 [debug] [Thread-1 (]: teradata adapter: Teradata error: [Version 17.20.0.12] [Session 1197] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+Caused by [Version 17.20.0.12] [Session 1197] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+ at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+ at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+ at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+ at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+ at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+ at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+ at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+ at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+ at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+ at database/sql.ctxDriverQuery ctxutil.go:48
+ at database/sql.(*DB).queryDC.func1 sql.go:1757
+ at database/sql.withLock sql.go:3439
+ at database/sql.(*DB).queryDC sql.go:1752
+ at database/sql.(*Conn).QueryContext sql.go:2011
+ at main.goCreateRows goside.go:668
+ at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+ at runtime.cgocallbackg1 cgocall.go:316
+ at runtime.cgocallbackg cgocall.go:235
+ at runtime.cgocallback asm_amd64.s:994
+ at runtime.goexit asm_amd64.s:1594
+23:08:34.247500 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: ROLLBACK
+23:08:34.332594 [debug] [Thread-1 (]: finished collecting timing info
+23:08:34.333237 [debug] [Thread-1 (]: On seed.dbt_transformation.transactions_: Close
+23:08:34.433605 [debug] [Thread-1 (]: Database Error in seed transactions_ (data\transactions_.csv)
+  [Version 17.20.0.12] [Session 1197] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+  Caused by [Version 17.20.0.12] [Session 1197] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+   at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+   at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+   at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+   at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+   at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+   at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+   at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+   at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+   at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+   at database/sql.ctxDriverQuery ctxutil.go:48
+   at database/sql.(*DB).queryDC.func1 sql.go:1757
+   at database/sql.withLock sql.go:3439
+   at database/sql.(*DB).queryDC sql.go:1752
+   at database/sql.(*Conn).QueryContext sql.go:2011
+   at main.goCreateRows goside.go:668
+   at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+   at runtime.cgocallbackg1 cgocall.go:316
+   at runtime.cgocallbackg cgocall.go:235
+   at runtime.cgocallback asm_amd64.s:994
+   at runtime.goexit asm_amd64.s:1594
+23:08:34.435056 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8d86884a-a580-44a3-8bdf-f1016914007f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002210849A740>]}
+23:08:34.435733 [error] [Thread-1 (]: 1 of 1 ERROR loading seed file teddybank.transactions_ ......................... [[31mERROR[0m in 6.43s]
+23:08:34.437833 [debug] [Thread-1 (]: Finished running node seed.dbt_transformation.transactions_
+23:08:34.440350 [debug] [MainThread]: Acquiring new teradata connection "master"
+23:08:34.440908 [debug] [MainThread]: Using teradata connection "master"
+23:08:34.441453 [debug] [MainThread]: On master: 
+23:08:34.441994 [debug] [MainThread]: Opening a new connection, currently in state closed
+23:08:35.985630 [debug] [MainThread]: SQL status: OK in 1.54 seconds
+23:08:35.986854 [debug] [MainThread]: On master: COMMIT
+23:08:35.987549 [debug] [MainThread]: Using teradata connection "master"
+23:08:35.987656 [debug] [MainThread]: On master: COMMIT
+23:08:36.073640 [debug] [MainThread]: SQL status: OK in 0.09 seconds
+23:08:36.074839 [debug] [MainThread]: On master: Close
+23:08:36.172521 [info ] [MainThread]: 
+23:08:36.173600 [info ] [MainThread]: Finished running 1 seed in 16.40s.
+23:08:36.174746 [debug] [MainThread]: Connection 'master' was properly closed.
+23:08:36.175306 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+23:08:36.175912 [debug] [MainThread]: Connection 'list_None_teddybank' was properly closed.
+23:08:36.176485 [debug] [MainThread]: Connection 'seed.dbt_transformation.transactions_' was properly closed.
+23:08:36.186705 [info ] [MainThread]: 
+23:08:36.187708 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+23:08:36.188704 [info ] [MainThread]: 
+23:08:36.189706 [error] [MainThread]: [33mDatabase Error in seed transactions_ (data\transactions_.csv)[0m
+23:08:36.189706 [error] [MainThread]:   [Version 17.20.0.12] [Session 1197] [Teradata SQL Driver] [Error 528] A failure occurred while executing parameter sets 1 through 2536 of a batch request. Details of the failure can be found in the error string that is accessible using the escape functions {fn teradata_nativesql}{fn teradata_get_errors}.
+23:08:36.190704 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+23:08:36.190704 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeDriverErrorCode ErrorUtil.go:198
+23:08:36.191702 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:617
+23:08:36.192703 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+23:08:36.192703 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+23:08:36.193710 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+23:08:36.194701 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+23:08:36.194701 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+23:08:36.195703 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+23:08:36.195703 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+23:08:36.196702 [error] [MainThread]:    at main.goCreateRows goside.go:668
+23:08:36.196702 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+23:08:36.197702 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+23:08:36.197702 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+23:08:36.198703 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+23:08:36.198703 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+23:08:36.199704 [error] [MainThread]:   Caused by [Version 17.20.0.12] [Session 1197] [Teradata Database] [Error 2616] Numeric overflow occurred during computation.
+23:08:36.199704 [error] [MainThread]:    at gosqldriver/teradatasql.formatError ErrorUtil.go:88
+23:08:36.200704 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).formatDatabaseError ErrorUtil.go:216
+23:08:36.201702 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).makeChainedDatabaseError ErrorUtil.go:232
+23:08:36.201702 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).processErrorParcel TeradataConnection.go:812
+23:08:36.202701 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).processResponseBundle TeradataRows.go:2223
+23:08:36.202701 [error] [MainThread]:    at gosqldriver/teradatasql.(*TeradataRows).executeSQLRequest TeradataRows.go:811
+23:08:36.203702 [error] [MainThread]:    at gosqldriver/teradatasql.newTeradataRows TeradataRows.go:588
+23:08:36.203702 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataStatement).QueryContext TeradataStatement.go:122
+23:08:36.204703 [error] [MainThread]:    at gosqldriver/teradatasql.(*teradataConnection).QueryContext TeradataConnection.go:1316
+23:08:36.204703 [error] [MainThread]:    at database/sql.ctxDriverQuery ctxutil.go:48
+23:08:36.205702 [error] [MainThread]:    at database/sql.(*DB).queryDC.func1 sql.go:1757
+23:08:36.205702 [error] [MainThread]:    at database/sql.withLock sql.go:3439
+23:08:36.205702 [error] [MainThread]:    at database/sql.(*DB).queryDC sql.go:1752
+23:08:36.206702 [error] [MainThread]:    at database/sql.(*Conn).QueryContext sql.go:2011
+23:08:36.206702 [error] [MainThread]:    at main.goCreateRows goside.go:668
+23:08:36.207702 [error] [MainThread]:    at _cgoexp_d798738a351d_goCreateRows _cgo_gotypes.go:367
+23:08:36.207702 [error] [MainThread]:    at runtime.cgocallbackg1 cgocall.go:316
+23:08:36.208702 [error] [MainThread]:    at runtime.cgocallbackg cgocall.go:235
+23:08:36.208702 [error] [MainThread]:    at runtime.cgocallback asm_amd64.s:994
+23:08:36.209701 [error] [MainThread]:    at runtime.goexit asm_amd64.s:1594
+23:08:36.210703 [info ] [MainThread]: 
+23:08:36.210703 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+23:08:36.211702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022108317670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221084982E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022108499180>]}
+
+
+============================== 2023-04-18 23:16:21.365698 | 0d448b9b-454b-4b55-970e-d356af770904 ==============================
+23:16:21.365698 [info ] [MainThread]: Running with dbt=1.1.0
+23:16:21.365698 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\rc255085\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['Analytic_Dataset'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+23:16:21.366665 [debug] [MainThread]: Tracking: tracking
+23:16:21.379668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219431359F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021943137820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219431364D0>]}
+23:16:21.407677 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+23:16:21.407677 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+23:16:21.407677 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_transformation.example
+
+23:16:21.412662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0d448b9b-454b-4b55-970e-d356af770904', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002194324A7D0>]}
+23:16:21.416663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0d448b9b-454b-4b55-970e-d356af770904', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219431D66B0>]}
+23:16:21.416663 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+23:16:21.416663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0d448b9b-454b-4b55-970e-d356af770904', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219431D6890>]}
+23:16:21.416663 [warn ] [MainThread]: The selection criterion 'Analytic_Dataset' does not match any nodes
+23:16:21.417664 [info ] [MainThread]: 
+23:16:21.418664 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+23:16:21.421664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219431D6440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219431D65F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219431D6350>]}
